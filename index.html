@@ -5,9 +5,10 @@ title: Winging It
 
 <div id="home">
   <h1>Blog posts</h1>
-  <ul class="posts">
+  <ul>
     {% for post in site.posts %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 </div>
+
