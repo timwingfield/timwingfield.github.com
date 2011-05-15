@@ -1,10 +1,13 @@
-<html>
-  <head>
-  <title>Tim Wingfield - Github</title>
-  </head>
-  <body>
-    <h2>Github pages test</h2>
-    <p>I'm not too sure what will happen with this file. Could be magical.</p>
-    <a href="http://github.com/timwingfield">My Github Repositories</a>
-  </body>
-</html>
+---
+layout: default
+title: Winging It
+---
+
+<div id="home">
+  <h1>Blog posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
