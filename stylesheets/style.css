@@ -8,7 +8,7 @@ Released for free under a Creative Commons Attribution 3.0 License
 body {
 	margin: 0px;
 	padding: 0;
-	background: #FFFFFF url(images/img01.jpg) repeat-x left top;
+	background: #FFFFFF url(../images/img01.jpg) repeat-x left top;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	color: #838383;
@@ -18,7 +18,7 @@ h1, h2, h3 {
 	margin: 0;
 	text-transform: uppercase;
 	font-weight: normal;
-	color: #549900;
+	color: #BB1515;
 }
 
 h1 {
@@ -116,7 +116,7 @@ hr {
 #menu li {
 	display: block;
 	float: left;
-	background: url(images/img02.jpg) no-repeat right 10px;
+	background: url(../images/img02.jpg) no-repeat right 10px;
 }
 
 #menu a {
@@ -237,17 +237,17 @@ hr {
 #content {
 	float: right;
 	margin-top: -110px;
-	background: url(images/img05.jpg) repeat-y left top;
+	background: url(../images/img05.png) repeat-y left top;
 }
 
 #content-bgtop {
-	background: url(images/img04.jpg) no-repeat left top;
+	background: url(../images/img04.png) no-repeat left top;
 }
 
 #content-bgbtm {
 	width: 500px;
 	padding: 80px 40px 20px 40px;
-	background: url(images/img06.jpg) no-repeat left bottom;
+	background: url(../images/img06.png) no-repeat left bottom;
 }
 
 /* Post */
@@ -338,8 +338,8 @@ hr {
 #sidebar li li {
 	margin: 0px 0px 0px 0;
 	padding: 10px 0px 10px 20px;
-	border-bottom: 1px solid #E0E0E0;
-	background: url(images/img07.jpg) no-repeat left 13px;
+	border-bottom: 1px solid #E0CDA7;
+	background: url(../images/img07.jpg) no-repeat left 13px;
 }
 
 #sidebar li li a {
@@ -359,7 +359,7 @@ hr {
 	height: 26px;
 	margin: 0 0 10px 0px;
 	padding: 4px 0px 0px 20px;
-	background: url(images/img03.jpg) no-repeat left top;
+	background: url(../images/img03.png) no-repeat left top;
 	letter-spacing: -1px;
 	text-transform: uppercase;
 	font-size: 18px;
