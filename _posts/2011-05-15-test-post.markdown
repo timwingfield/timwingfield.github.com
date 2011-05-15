@@ -1,3 +1,6 @@
+---
+layout:post
+---
 First paragraph of my test post. This line has **emphasis** on that one word there.
 
 #A list
