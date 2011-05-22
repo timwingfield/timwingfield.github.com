@@ -45,13 +45,11 @@ Released   : 20100522
       <div id="sidebar">
         <ul>
           <li>
-            <h2>Header Number One</h2>
+            <h2>Categories</h2>
             <ul>
-              <li>Item one</li>
-              <li>Item two</li>
-              <li>Item three</li>
-              <li>Item four</li>
-              <li>Item five</li>
+            {% for category in site.categories %}
+              <li><a href="/categories/{{category | first}}/index.html">{{category | first}}</a></li>
+            {% endfor %}
             </ul>
           </li>
           <li>

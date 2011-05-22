@@ -1,6 +1,6 @@
 ---
-markdown: maruku
-permalink: pretty
+markdown: rdiscount 
 pygments: false
 safe: false
+permalink: /:year/:month/:day/:title.html
 
