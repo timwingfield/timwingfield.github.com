@@ -12,7 +12,7 @@ Professionally I am a software craftsman and agile coach at Pillar Technology. M
 
 In my spare time I feed my hockey addiction. I coach both the boys’ teams and enjoy that time a great deal. (Not to mention the primer 8 year old hockey players can give you for handling a team of software developers.) I also play a little hockey myself, and as if I needed a little more hockey in my life, we have season tickets to the Blue Jackets. Being the Blue Jackets, they don’t occupy much of my time after the first week of April, though.
 
-![Brendan playing hockey](/images/brendan-hockey.jpg "Brendan playing hockey") ![Alex playing hockey](/images/alex-hockey.jpg "Alex playing hockey")
+![Brendan playing hockey](/images/brendan-hockey.jpg "Brendan playing hockey") ![Alex playing hockey](/images/alex-hockey.JPG "Alex playing hockey")
 
 As a family we enjoy traveling quite a bit. Our usual destination is Walt Disney World. We’ll make a visit or two there per year, which might mean we have a problem, but we won’t admit it. Beyond the Mouse, we’ve seen Alaska, the Gulf Coast of Florida, the Outer Banks, Wisconsin, and various Midwestern cities...usually for hockey tournaments.
 
