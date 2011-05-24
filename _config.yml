@@ -1,6 +1,6 @@
 ---
 markdown: rdiscount 
-pygments: false
+pygments: true 
 safe: false
 permalink: /:year/:month/:day/:title.html
 
