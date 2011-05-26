@@ -1,0 +1,24 @@
+---
+layout: post
+title: CodeMash Feeling The Vibe
+category: CodeMash 
+---
+## CodeMash: Feeling The Vibe. 
+
+I had originally set out to cover my travels through CodeMash similar to my post from Day 1. Give a recap of my morning, afternoon, etc. However, it soon became clear that keeping up with what I was hearing and doing was going to be tough, and that I wasn't going to have the time to sit down and enter it. On top of that, it feels like giving a couple sentences to somebody's 1:15 presentation gives them a disservice for the work they put into it.
+
+Then I read [Scott Hanselman's entry on his day at CodeMash](http://http://www.hanselman.com/blog/CodeMash2008WrapupWhatAreYouWorkingOn.aspx), and I couldn't agree more with his point about "The Vibe" of the conference. Scott made a great contribution to The Vibe with his great keynote followed by just wandering the halls and jumping into conversations. A few of us were lucky enough to have him jump into our conversation before he discovered Rock Band. What's odd is it was kind of the "CodeMash Way" to have Scott drop in and say, "So, what are you guys talking about?" It just seemed normal, and the conversation didn't miss a beat.
+
+The "CodeMash Way" is that everybody wants to learn something from everybody else. Nobody's language or approach is any better or worse than the person you're talking with, both of you are trying to learn something from the other. It's at its most evident when you look around the room during a presentation. [Josh Holmes](http://www.joshholmes.com/) was giving a talk on Microsoft's DLR, and in the back of the room [Joe O'Brien](http://objo.com) is taking it all in...and helping Josh along with some of the dynamic language benefits. The flip side is Josh was in the back of the room for Joe's talk on testing in Ruby the day before. The aforementioned Scott Hanselman was sitting along the wall for [Dustin Campbell's](http://www.diditwith.net/) presentation on F#. (And Scott's phone rang twice...that's two rounds of donuts, Mr. Hanselman.)
+
+Suddenly the community isn't defined as the Ruby community, the .Net community, or the Java community...we're one big problem solving community exploring what weapons we can add to the arsenal to solve those problems. What .Net or Java guy heard Joe say, "I have 100% code coverage in Ruby at all times," and didn't have their jaw hit the floor? (Probably more than one since he asked the room what their coverage was and got answers ranging from "code coverage?" to 25% to 80%.)
+
+I added a little to The Vibe, giving some advice on ASP.Net AJAX in the hallway (and thinking next year I should offer up a talk titled, "The Update Panel Sucks"), but for the most part I just soaked up all I could soak up. I went to Ruby discussions, saw plenty of Java code, and my only .Net sessions were on F# (where I was lost about 8 minutes after, "Hi, I'm Dustin Campbell" - functional programming not my bag) and Josh Holmes's talk on the DLR.
+
+The best place to dig The Vibe is in the hallways, the open spaces, and the "Ask the Experts" sessions. I got the chance to meet and talk to Sara Ford in the hallway, but only because [Jim Weirich](http://onestepback.org/index.cgi) had stolen the experts room to give his 10 things about Ruby talk, which I was attending.
+
+The amount of Ruby I learned in there pales in comparison to the informal sessions many of us had with Jim. I really lucked out here. It started with CodeMash committee member and speaker, aspiring member of the Blue Man Group, Rock Band star, agile aficionado, and all around great guy [Brian Prince](http://brianhprince.blogspot.com/) walking up to Jim at the [QSI](http://www.quicksolutions.com/) sponsored Meet and Greet and asking what Aaron and I needed to do to get started in Ruby. That started an hour long discussion that many people walked up and joined. The next day at lunch, a few of us were sitting at a table eating when Jim walked by and recognized us from the night before, so he joined us. More opportunity to soak up what he had to offer. (I later commented to Brian, "Jim walks by and you learn something.") This isn't meant to be the Jim Weirich love-fest, he's a nice guy and all, but more along the lines of the "accidental" things that happen at CodeMash to add to The Vibe.
+
+Compared to last year, I think The Vibe took on a much bigger feel this year. Maybe that's me moving out of my comfort zone at sessions, but mostly I noticed it outside the sessions while walking around. The informality of CodeMash builds The Vibe, but the people attending and speaking dropping our "barriers" is what takes The Vibe to a fever pitch. I'm already looking forward to next year's edition.
+
+Of Note: I didn't win an iPod this year, like last year. I didn't win an Xbox or Wii, either. I did win [a book](http://nostarch.com/frameset.php?startat=ruby)...ON RUBY!!! Woo-Hoo!!
