@@ -8,7 +8,7 @@ categories: development development-practices kanban
 After seeing success with Kanban in a production support environment ([part 1](/2008/11/16/kanban-o-rama-part-1.html), [part 2](/2008/11/19/kanban-o-rama-part-2.html)), we decided to give it a try in a new development situation. This project was a mix of new development and working with an inherited code base to implement some existing features differently.
 
 Because of this situation, we ended up with a mixed bag of features. At the onset, we decided to break these features out into tasks, and we would track both across our Kanban board, as shown here with a snapshot of our Work In Progress section.
-![Project Kanban Board](http://lh6.ggpht.com/_5SnOEGqkJYw/Sdq2y2RIUZI/AAAAAAAABZM/n3eVSWTdIww/s1600-h/PIC-0301%5B3%5D.jpg "Project Kanban Board")
+![Project Kanban Board](/images/posts/tl-kanban-board.jpg)
 
 Features were broken into tasks and grouped together in the backlog. Once a feature went into WIP, it's tasks moved below into the Task Breakout section and were worked there. Once all tasks were completed, they were once again compiled back into a feature and went into test as a whole.
 
