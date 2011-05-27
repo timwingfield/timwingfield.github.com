@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CodeMash Feeling The Vibe
-category: CodeMash 
+category: Codemash 
 ---
 ## CodeMash: Feeling The Vibe. 
 

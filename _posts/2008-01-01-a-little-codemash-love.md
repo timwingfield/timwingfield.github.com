@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Little CodeMash Love
-categories: CodeMash development conference
+categories: Codemash development conference
 ---
 ## A Little CodeMash Love
 Coming up in a few days will be [CodeMash](http://codemash.org "CodeMash) at the Kalahari Resort in Sandusky, OH. Having been to a few conferences, I consider this one a "don't miss." And here's why...

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CodeMash Day 1 Morning
-category: CodeMash 
+category: Codemash 
 ---
 ## CodeMash Day 1 Morning 
 
