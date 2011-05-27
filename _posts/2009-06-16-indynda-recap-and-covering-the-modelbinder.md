@@ -25,46 +25,46 @@ For the Reader’s Digest version: the ModelBinder works on the premise of conve
 
 For the example I missed, we had the edit model that we wanted to bind to:
 
-`public class AssaultItemEditModel 
-{ 
-    public virtual int Id { get; set; } 
-    public virtual string Type { get; set; } 
-    public virtual string Description { get; set; } 
-    public virtual int LoadValue { get; set; }
-}`
+    public class AssaultItemEditModel 
+    { 
+        public virtual int Id { get; set; } 
+        public virtual string Type { get; set; } 
+        public virtual string Description { get; set; } 
+        public virtual int LoadValue { get; set; }
+    }
 
 The view had the form fields hooked to that edit model through the Fluent HTML controls from MVC Contrib.
 
-`&lt;% Html.BeginForm("Save", "Inventory");%&gt; 
-    &lt;h2&gt;Edit &lt;%=Html.Encode(Model.Type) %&gt;&lt;/h2&gt; 
-    &lt;%=this.Hidden(x =&gt; x.Id) %&gt; 
-    &lt;ul class="details"&gt; 
-        &lt;li&gt;&lt;span&gt;Type: &lt;/span&gt;&lt;%=this.TextBox(x =&gt; x.Type) %&gt;&lt;/li&gt; 
-       &lt;li&gt;&lt;span&gt;Description: &lt;/span&gt;&lt;%=this.TextBox(x =&gt; x.Description) %&gt;&lt;/li&gt; 
-        &lt;li&gt;&lt;span&gt;Load Value: &lt;/span&gt;&lt;%=this.TextBox(x =&gt; x.LoadValue) %&gt;&lt;/li&gt; 
-        &lt;li&gt;&lt;%=this.SubmitButton("Save") %&gt;&lt;/li&gt; 
-    &lt;/ul&gt; 
-&lt;% Html.EndForm();%&gt;`
+    <% Html.BeginForm("Save", "Inventory");%>
+        <h2>Edit <%=Html.Encode(Model.Type) %></h2> 
+        <%=this.Hidden(x => x.Id) %> 
+        <ul class="details"> 
+            <li><span>Type: </span><%=this.TextBox(x => x.Type) %></li> 
+            <li><span>Description: </span><%=this.TextBox(x => x.Description) %></li> 
+            <li><span>Load Value: </span><%=this.TextBox(x => x.LoadValue) %></li> 
+            <li><%=this.SubmitButton("Save") %></li> 
+        </ul> 
+    <% Html.EndForm();%>`
 
 And finally, the controller method that’s going to process it all. Rather than taking in the standard id, it takes in a model object to which it will do all the Request.Form for you and hook the form values up to the object properties.
 
-`[AcceptVerbs(HttpVerbs.Post)] 
-public ActionResult Save(AssaultItemEditModel item) 
-{ 
-     //do save 
-     var assaultItem = new AssaultItem(item.Id) 
-         { 
-             Description = item.Description,
-             Type = item.Type,
-             LoadValue = item.LoadValue 
-         };
+    [AcceptVerbs(HttpVerbs.Post)] 
+    public ActionResult Save(AssaultItemEditModel item) 
+    { 
+         //do save 
+         var assaultItem = new AssaultItem(item.Id) 
+             { 
+                 Description = item.Description,
+                 Type = item.Type,
+                 LoadValue = item.LoadValue 
+             };
 
-     Service.SaveAssaultItem(assaultItem);
+         Service.SaveAssaultItem(assaultItem);
 
-     var message = "Item saved successfully.";
+         var message = "Item saved successfully.";
 
-     return this.RedirectToAction(x =&gt; x.Index(message)); 
-}`
+         return this.RedirectToAction(x =&gt; x.Index(message)); 
+    }
 
 Don’t mind my extra step on newing up an object with the id as a parameter, that’s due to the way I hooked up [Fluent nHibernate](http://fluentnhibernate.org/) at the start. Basically, to generate my maps from my domain objects, the id gets a private setter as convention. So, to get the right object to save, I had to set up the constructor to take an id argument. I cut some corners to get the demo app out the door. (John, you may hit me with, “Quicker does not equal better,” as soon as you read this.)
 
