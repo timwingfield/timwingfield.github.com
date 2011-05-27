@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Houston here. We're looking for somebody to blame for your problem, 13.
-categories: kanban speaking conference
+categories: development development-practices PragProg
 ---
 ## "Houston here. We're looking for somebody to blame for your problem, 13."
 

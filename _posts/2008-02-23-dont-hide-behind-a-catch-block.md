@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Don't Hide Behind a Catch Block
-category: development
+categories: development PragProg
 ---
 ## Don't Hide Behind a Catch Block
 
