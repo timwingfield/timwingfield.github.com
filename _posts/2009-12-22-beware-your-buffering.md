@@ -5,7 +5,7 @@ categories: development kanban
 ---
 ## Beware Your Buffering
 
-In a twitter discussion that was centering around some Kanban joy, the point of buffering came up. I offered [a bit of twitter-esque advice](http://twitter.com/timwingfield/status/6944584935), meaning it was short, could be interpreted as terse, and lacked the detail it needed. As any good friend would do, [Jim](http://twitter.com/jimholmes) [called me out](http://twitter.com/JimHolmes/status/6944906114) for my 140 character bit of guidance.
+In a twitter discussion that was centering around some Kanban joy, the point of buffering came up. I offered [a bit of twitter-esque advice](http://twitter.com/timwingfield/status/6944584935), meaning it was short, could be interpreted as terse, and lacked the detail it needed. As any good friend would do, [Jim](http://twitter.com/ajimholmes) called me out for my 140 character bit of guidance.
 
 So, in more than 140 characters…
 
