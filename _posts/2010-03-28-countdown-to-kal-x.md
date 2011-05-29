@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Countdown to Kal-X
-categories: development, conference, development-practices
+categories: development conference development-practices
 ---
 ## Countdown to Kal-X
 

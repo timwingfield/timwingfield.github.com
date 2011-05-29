@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dropbox, ASP.Net, and a Mac
-categories: ASP.Net-MVC, development, Mac, Windows
+categories: ASP.Net-MVC development Mac Windows
 ---
 ## Dropbox, ASP.Net, and a Mac
 

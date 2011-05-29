@@ -9,7 +9,9 @@ Off the top, apologies for the rather dark color scheme. The slides I think I ca
 
 HOWEVER! :) 
 
-I just uploaded a PDF of the slides and you can look at them in whatever color scheme really makes them pop! You can get it all here: [http://github.com/timwingfield/TestingSeaPound/tree/CONDG](http://github.com/timwingfield/TestingSeaPound/tree/CONDG)
+I just uploaded a PDF of the slides and you can look at them in whatever color scheme really makes them pop! You can get it all here: 
+
+[http://github.com/timwingfield/TestingSeaPound/tree/CONDG](http://github.com/timwingfield/TestingSeaPound/tree/CONDG)
 
 Not a total cop out, please take a look at the code sample if you want to see the complete test classes from the examples - both the nUnit and RSpec ones. The rails app uploaded is the same one I created in the presentation, complete with the poorly named controller.
 
