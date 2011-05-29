@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Not Add Some Ruby?
-categories: IronRuby Ruby
+categories: IronRuby Ruby continuous-improvement
 ---
 ## Why Not Add Some Ruby?
 
