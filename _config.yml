@@ -3,4 +3,4 @@ markdown: rdiscount
 pygments: true 
 safe: false
 permalink: /:year/:month/:day/:title.html
-
+paginate: 5

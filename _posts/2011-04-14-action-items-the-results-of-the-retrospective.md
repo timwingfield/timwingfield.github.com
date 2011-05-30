@@ -3,7 +3,7 @@ layout: post
 title: Action Items - The Results of the Retrospective
 categories: agile lean retrospectives
 ---
-## Action Items - The Results of the Retrospective
+## Action Items: The Results of the Retrospective
 
 One of the principles of agile is incremental change. Looking inward on what your team is doing that could be better is one way to get that incremental change, and team retrospectives are a great way to do that looking inward. If you're not familiar with team retrospectives, essentially they're a fairly informal gathering where teams bring up issues and kudos over recent work and decide on a few things that they want to improve. The things they decide to improve are usually called Action Items.
 

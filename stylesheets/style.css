@@ -32,13 +32,16 @@ h2 {
 h3 {
 }
 
-p, ul, ol {
+p{
 	margin-top: 0;
-	line-height: 240%;
+	line-height: 180%;
 	text-align: justify;
 }
 
 ul, ol {
+	margin-top: 0;
+	line-height: 240%;
+	text-align: justify;
 }
 
 blockquote {
@@ -148,38 +151,6 @@ hr {
 #menu .first {
 }
 
-/* Search */
-
-#search {
-	float: right;
-	padding: 10px 10px 0px 0px;
-}
-
-#search form {
-	float: right;
-	margin: 0;
-	padding: 4px 0px 0 0;
-}
-
-#search fieldset {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
-#search input {
-	float: left;
-	font: 12px Georgia, "Times New Roman", Times, serif;
-}
-
-#search-text {
-	width: 215px;
-	height: 20px;
-	padding: 6px 0 0 7px;
-	border: 1px solid #E7E7E7;
-	color: #000000;
-}
-
 /* Page */
 
 #page {
@@ -252,6 +223,20 @@ hr {
 
 /* Post */
 
+.post h2 {
+  font-size: 30px
+}
+
+.post IMG {
+  margin: 4px 6px 2px 6px;
+}
+
+.post ul, .post ol {
+	margin-top: 0;
+	line-height: 180%;
+	text-align: justify;
+}
+
 .post {
 	margin-bottom: 30px;
 	padding-bottom: 25px;
@@ -308,10 +293,6 @@ hr {
 	text-decoration: none;
 	font-weight: bold;
 	color: #FFFFFF;
-}
-
-#post IMG {
-  margin: 4px 6px 2px 6px;
 }
 
 /* Sidebar */

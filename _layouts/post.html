@@ -1,6 +1,6 @@
 ---
 layout: default
 ---
-<div id="post">
-{{ content }}
-</div>
+{% assign post = page %}
+
+{% include post.html %}
