@@ -6,9 +6,11 @@
     <script type="text/javascript">
         var disqus_shortname = 'timwingfield';
         
-        //var disqus_url = 'http://blog.timwingfield.com{{ post.url }}';
+        {% if post.uuid %}
+        var disqus_identifier = '{{ post.uuid }}'; 
+        {% endif %}
 
-        var disqus_url = '{{ post.uuid }}'; 
+        var disqus_url = 'http://blog.timwingfield.com{{ post.url }}';
 
         (function() {
             var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
