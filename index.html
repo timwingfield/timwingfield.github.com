@@ -6,9 +6,57 @@ title: Winging It
 <div id="home">
   {% for post in paginator.posts %}
     <div>
-    <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+    <h2 class="index-link"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     {% include post.html %}
     </div>
-    </hr>
   {% endfor %}
 </div>
+
+{% if paginator.total_pages > 1 %}
+  <div id="pagination">
+    <ol>
+      {% if paginator.previous_page %}
+      <li>
+        {% if paginator.previous_page > 1 %}
+        <a href="/page{{ paginator.previous_page }}" title="Go to previous page">
+          &laquo; previous 
+        </a>
+        {% else %}
+        <a href="/" title="Go to previous page">
+          &laquo; previous 
+        </a>
+        {% endif %}
+      </li>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+      <li>
+        {% if page == paginator.page %}
+        {{ page }}
+        {% else %}
+          {% if page > 1 %}
+          <a href="/page{{ page }}">{{page}}</a>
+          {% else %}
+          <a href="/">{{page}}</a>
+          {% endif %}
+        {% endif %}
+      </li>
+      {% endfor %}
+
+      {% if paginator.next_page %}
+      <li>
+        <a href="/page{{ paginator.next_page }}" title="Go to next page">
+          next &raquo; 
+        </a>
+      </li>
+      {% endif %}
+    </ol>
+    <div style="clear: both; height: 0px">.</div>
+  </div>
+{% endif %}
+
+<script type="text/javascript">
+  $(function(){
+    $(".post h2").hide();
+  });
+</script>
