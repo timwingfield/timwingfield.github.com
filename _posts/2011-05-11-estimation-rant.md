@@ -2,7 +2,6 @@
 layout: post
 title: Estimation Rant
 categories: agile lean estimation sizing
-uuid: http://blog.timwingfield.com/2011/05/estimation-rant.html
 ---
 ## Estimation Rant
 
