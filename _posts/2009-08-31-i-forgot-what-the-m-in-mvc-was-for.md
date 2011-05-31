@@ -12,7 +12,7 @@ On page 89, the light bulb went off. But not for Rails so much as for how I’m 
 * Models are the classes that represent your business domain and that are responsible for communicating with your data. In Rails, this means the tables in your database. 
 * Views represent your presentation layer, for example, HTML and JavaScript. 
 * Controllers are responsible for connecting the models and views and managing the flow of the application. 
-![I'm doing it completely wrong](/images/posts/mvc-wrong.png "I'm doing it completely wrong")
+<img src="/images/posts/mvc-wrong.png" alt="I'm doing it completely wrong" align="right" />
 
 That reads pretty straightforward to me. Hell, I’ve stood in front of groups of devs on more than one occasion and said, “Views are what gets rendered, controllers marry up the views with anything they need from the model, and **the model is everything that’s not a view or a controller.**”
 

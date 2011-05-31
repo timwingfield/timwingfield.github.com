@@ -19,5 +19,5 @@ Elizabeth and I went back on forth a bit on where the bullpen board would reside
 
 Finally one last thing we thought we'd employ would be different sized cards for different sized features. If we can't get all features to breakout into a similar estimate range, which is a very real possibility, then maybe get two or three ranges and denote them with different sized cards on the board. This would allow for different cycles to be tracked based on feature size, and a quick look at the board would tell you what type of features are moving through the system at any given time.
 
+<img src="/images/posts/tl-done-picture.jpg" alt="Done!" align="right" />
 I think these changes to our approach will help the next new dev project where we employ Kanban. We used it successfully before, but I think this will help get more features into done with less friction for the whole team. Which means cards will get put in the envelope above this lovely lady's picture in a shorter cycle. (Whiteboard drawing courtesy of Dan Shultz.)
-![Done!](/images/posts/tl-done-picture.jpg)

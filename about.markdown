@@ -6,7 +6,8 @@ title: About Tim
 
 Hello. If you’ve landed on this page then I can only guess you want to learn a little bit more about me, Tim Wingfield.
 
-I live in the greater Columbus metropolitan area in the suburb of Hilliard with my wife Wendy, and our two boys Brendan (2017 NHL draft eligible) and Alex (2020 NHL draft eligible). I’ve been a resident of central Ohio my whole life growing up on a farm about 50 miles north of Columbus, and have lived in and around Columbus for the last 20 years or so. ![Wendy, Brendan, and Alex](/images/family.jpg "Wendy, Brendan, and Alex")
+<img src="/images/family.jpg" alt="Wendy, Brendan, and Alex" align="right" class="about" />
+I live in the greater Columbus metropolitan area in the suburb of Hilliard with my wife Wendy, and our two boys Brendan (2017 NHL draft eligible) and Alex (2020 NHL draft eligible). I’ve been a resident of central Ohio my whole life growing up on a farm about 50 miles north of Columbus, and have lived in and around Columbus for the last 20 years or so.
 
 Professionally I am a software craftsman and agile coach at Pillar Technology. My software background is somewhat varied, but have spent most of my time in the web development space. I grew up on the Microsoft stack, learning ASP and moving to .Net as it grew. Lately I’ve spent a lot of time learning Ruby and all the goodies it brings to web frameworks and testing. I’m a practitioner of agile and lean, and I also speak publicly on many things software.
 
@@ -17,7 +18,8 @@ In my spare time I feed my hockey addiction. I coach both the boys’ teams and 
 As a family we enjoy traveling quite a bit. Our usual destination is Walt Disney World. We’ll make a visit or two there per year, which might mean we have a problem, but we won’t admit it. Beyond the Mouse, we’ve seen Alaska, the Gulf Coast of Florida, the Outer Banks, Wisconsin, and various Midwestern cities...usually for hockey tournaments.
 
 ###Other Random Tidbits...
-![up close](/images/tim-close.jpg "Up close")
+
+<img src="/images/tim-close.jpg" alt="Up close" align="right" class="about" />
 
 * Wendy and I were introduced by our respective best friends, who were dating each other. We got engaged the day they broke up. Ironical.
 * I have a younger brother, Kevin. He has a lovely wife Kate, a daughter Lauren, and a son Charlie.

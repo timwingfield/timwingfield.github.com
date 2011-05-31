@@ -6,7 +6,7 @@ categories: development Rails Ruby Mac
 ## Five Days with My MacBook Pro
 
 With a few changes headed my way in the coming new year, it was once again time to get some new hardware. I took the leap and opted for a MacBook Pro. (2.66GHz/4GB/320GB/15” so not the biggest, baddest one.) Here are a few of my initial leaving-Windows-and-Dell thoughts.
-![mac v. pc](/images/posts/mac_vs_pc.png "Mac v. PC")
+<img alt="Mac v. PC" src="/images/posts/mac_vs_pc.png" align="right" />
 
 I can say after five days that I’m pretty sure I made the right move. There are a few things I’m struggling with in the switch, mainly my fingers going to the correct keys. Years of hitting CTRL on a windows keyboard has me hitting the fn key on the MBP, which doesn’t do much. Getting used to the Command key will take some time, but the oddest keyboard issue I’m having is hitting the B key. The reach is apparently shorter because I’ve put a lot of spaces where there should be a B.
 

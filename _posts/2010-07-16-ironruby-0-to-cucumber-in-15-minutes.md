@@ -6,13 +6,14 @@ categories: Cucumber IronRuby Ruby
 ## IronRuby: 0 to Cucumber in 15 minutes
 
 Once again, a 140 character (or less) “outburst” gets me in trouble with a follower and I end up with a blog post. This one is one I probably should  have written a while back. I’ve enjoyed working with IronRuby the last few months, so this little intro is long overdue.
-[![Tim: From 0 to IronRuby all set up in less than 15 minutes. Preparing to cuke me some .Net. woot!](/images/posts/tw-ir-cuke-tweet.png)](http://twitter.com/timwingfield/status/18517846272)
+[<img src="/images/posts/tw-ir-cuke-tweet.png" alt="Tim: From 0 to IronRuby all set up in less than 15 minutes. Preparing to cuke me some .Net. woot!" align="right" />](http://twitter.com/timwingfield/status/18517846272)
+
 
 First things first, you’ll need to install [IronRuby](http://ironruby.net/). Head off to the [download](http://ironruby.codeplex.com/releases/view/25901) page, and click on your msi of choice and let the installer do its thing.
 
 Since my goal here was to get cucumber ready to roll against some .Net assemblies, you’ll need to install a few gems. IronRuby comes with Ruby Gems already installed, so thankfully to install the ones you need you just need to type `igem install` a few times.
 
-[![Jared: Sounds like someone needs to blog the steps needed to setup.](/images/posts/jr-ir-cuke-tweet.png)](http://twitter.com/jaredrichardson/status/18517907299)
+[<img alt="Jared: Sounds like someone needs to blog the steps needed to setup." src="/images/posts/jr-ir-cuke-tweet.png" align="left" />](http://twitter.com/jaredrichardson/status/18517907299)
 “Wait, what? igem? WTF?” Yeah, that’s one of the IronRuby-isms, putting an i on the front of a couple of commands. If you’ve done a bit of Ruby, you’ll have a little muscle memory to retrain, but it’s a small hurdle. (You’ll also type `ir` instead of `ruby` to run a script and `iirb` instead of `irb` to get to irb.)
 
 So, on with our gem installing…

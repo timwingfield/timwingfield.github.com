@@ -249,7 +249,7 @@ div#pagination ol li {
   font-size: 30px
 }
 
-.post IMG {
+.post IMG, IMG.about {
   margin: 4px 6px 2px 6px;
 }
 
