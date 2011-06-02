@@ -245,6 +245,10 @@ div#pagination ol li {
 
 /* Post */
 
+.post .timestamp, .timestamp{
+  margin: 6px 0 10px 0;
+  font-size: 14px; 
+}
 .post h2 {
   font-size: 30px
 }
@@ -266,7 +270,7 @@ div#pagination ol li {
 }
 
 .post {
-	margin-bottom: 30px;
+	margin-bottom: 60px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #E0E0E0;
 }

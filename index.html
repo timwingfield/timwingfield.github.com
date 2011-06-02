@@ -6,6 +6,9 @@ title: Winging It
 <div id="home">
   {% for post in paginator.posts %}
     <div>
+    {% capture date_format %}%A, %B %e, %Y{% endcapture %}
+    <div class="timestamp">{{ post.date | date: date_format }}</div>
+
     <h2 class="index-link"><a href="{{ post.url }}">{{ post.title }}</a></h2>
     {% include post.html %}
     </div>
@@ -58,5 +61,6 @@ title: Winging It
 <script type="text/javascript">
   $(function(){
     $(".post h2").hide();
+    $(".post .timestap").hide();
   });
 </script>

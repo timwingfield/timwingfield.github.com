@@ -1,6 +1,6 @@
 <div class="post">
 {% if content %}
-  {% capture date_format %}%A, %B %e %Y{% endcapture %}
+  {% capture date_format %}%A, %B %e, %Y{% endcapture %}
   <div class="timestamp">{{ post.date | date: date_format }}</div>
   {{ content }}
   <div id="comments">
