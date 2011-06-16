@@ -327,6 +327,11 @@ div#pagination ol li {
 	color: #FFFFFF;
 }
 
+.disqus-link{
+  width: 100%;
+  text-align: right;
+}
+
 /* Sidebar */
 
 #sidebar {
