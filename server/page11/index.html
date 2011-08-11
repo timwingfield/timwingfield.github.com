@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Substantial   
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20100522
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Winging It</title>
+    <meta name="author" content="Tim Wingfield" />
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23516986-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/" class="first">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+      </div>
+      <div id="search"></div>
+    </div>
+    <div id="logo">
+      <h1><a href="/">Winging It</a></h1>
+      <p>
+        <img src="http://www.gravatar.com/avatar/1f178e90d4b441b3a1103254a5b3392a.jpg?s=50" />
+        <em>Here's what I got...</em>
+      </p>
+    </div>
+    <hr />
+    <div id="page">
+      <div id="content">
+        <div id="content-bgtop">
+          <div id="content-bgbtm">
+            <div id="home">
+  
+    <div>
+    
+    <div class="timestamp">Wednesday, July  9, 2008</div>
+
+    <h2 class="index-link"><a href="/2008/07/09/tdd-starting-to-sink-in.html">TDD Starting to Sink In</a></h2>
+    <div class="post">
+
+  <h2>TDD Starting to Sink In</h2>
+
+<p>Back in late March, I <a href="/2008/03/30/tdd-growing-pains.html">blogged about my issues getting going with TDD</a>. At the time I was nearing the end of a project where I had attempted some unit testing, but had not done it up front. I was looking forward to a clean slate to get some more work on TDDing up my code.</p>
+
+<p>That opportunity somewhat presented itself, though I was moving on to an established team, which presents its own challenges. However, this team, or a good portion of it, was practicing TDD. So, plenty of example code out there. Not only that, I ended up sitting about 3 feet from world renowned TDD zealot, Steve Harman. Steve is a great teacher, and only yelled at me a few times. (And I only cried the one time...)</p>
+
+<p>That helped on the professional side of things, but even in my own hobby coding I started writing more and more tests before the code. I've been presenting on ASP.Net MVC at a few places recently, and the sample code I use there was written all TDD style. (And is presented test first.) Well, almost all of it...somebody wrote his repository wrong, and the updates didn't work so well. I have some refactoring to do.</p>
+
+<p>So, here I am 3 months later, where do I stand on the points I brought up back in March?</p>
+
+<ol>
+<li>I tend to wrestle a lot with when to layout some of the framework and when to just breakdown and write the tests.</li>
+</ol>
+
+
+<p>This one became pretty easy when Steve introduced some BDD (<a href="http://en.wikipedia.org/wiki/Behavior_driven_development">Behavior Driven Design/Development</a>) style grammar to our testing. This one shift in thinking opened up my ability to get the requirements into unit tests, and get them green quicker. In a nutshell, thinking along the lines of, "When X condition is present, then Y should happen," and naming the classes and test methods with that type of grammar took me well beyond wondering when to write the tests.</p>
+
+<ol>
+<li>A recent project found our team working with a pile of generated tests.</li>
+</ol>
+
+
+<p>Generated tests are a thing of the past. This is a non-issue at this point.</p>
+
+<ol>
+<li>When to mock?</li>
+</ol>
+
+
+<p>Again, a healthy dose of Steve helped here a lot. Also, <a href="http://www.ayende.com/projects/rhino-mocks/downloads.aspx">Rhino Mocks</a> 3.5 was released with the <a href="http://ayende.com/Blog/archive/2008/05/16/Rhino-Mocks--Arrange-Act-Assert-Syntax.aspx">Arrange, Act, Assert syntax</a>, and that cleared up a lot in the mocking area. No more record and playback blocks, and lots of lambdas to stub out that which you want doing the dirty work.</p>
+
+<p>The answer to the original question finally became clear: Get the hard stuff out of the way with mocks. Beyond that, get the stuff that you're not testing out of the way with mocks. The AAA syntax made that pretty easy.</p>
+
+<ol>
+<li>Is this test trivial, or needed?</li>
+</ol>
+
+
+<p>OK, I still have a bit of trouble here. Not as much as before, but occasionally I find myself writing a test, looking at it, and going, "Gee, I'm testing the setter of that property...that had BETTER work!"</p>
+
+<ol>
+<li>I still have large holes in what I test.</li>
+</ol>
+
+
+<p>Again, still having trouble here. Even with the good TDD practices in place at the most recent project, I found myself frustrated and writing the code and screen testing it rather than writing my unit tests up front. I did have a deadline that I was up against, but cutting the unit tests is never the right solution. I fell back to an old habit, one I've been working pretty diligently on breaking.</p>
+
+<p>In the March blog entry, this referred to unit testing my javascript. Well, ending up on a Webforms project pretty much ended my worries about getting my javascript tested.</p>
+
+<p>So, with those steps behind me, what do I want to focus on now? Well, I can still improve on numbers 4 and 5 above, but I think those two will be continuous improvements. I'm going to continue down the BDD-ish path. It's not pure BDD, but it got me over the hump, and I like the syntax. But overall, I'm just going to keep going at getting the tests written up front. Focus more on the red, green, refactor as much as I can. I'm seeing the benefits, just need to get those old habits kicked.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2008/07/09/tdd-starting-to-sink-in.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Tuesday, June 17, 2008</div>
+
+    <h2 class="index-link"><a href="/2008/06/17/the-summer-tour-of-timbo.html">The Summer Tour of Timbo</a></h2>
+    <div class="post">
+
+  <h2>The Summer Tour of Timbo</h2>
+
+<p>The summer speaking tour is about to get underway, fresh off the heels of my successful spring tour. (Successful after the QSI Tech Night unit-test-a-palooza fun.)</p>
+
+<p>We'll be kicking off the summer tour in Cincinnati next Tuesday (6/24) at the June <a href="http://cinnug.org/">CINNUG</a> meeting. I'll be presenting on the ASP.Net MVC framework, why it's cool, why you should be using it now, and how it will do simple household chores for you - walking the dog, doing the laundry, and cleaning the bathroom. (It doesn't do windows, though.)</p>
+
+<p>Fresh off the evening in Cincinnati, I'll be heading to Dayton the very next evening to present the same riveting and engaging presentation to the good people of the <a href="http://daytondevgroup.net/">Dayton .Net Developers Group</a>. Fellow Quickie <a href="http://frazzleddad.blogspot.com/">Jim Holmes</a> helps run the Dayton bunch, so I expect heckling in Dayton.</p>
+
+<p>Following the quick bang-bang trip across south western Ohio, I'm off for a few weeks before I head below the Mason-Dixon line to speak to the <a href="http://memphisdot.net/">Memphis .Net User Group</a> on July 24. "Memphis?!?!" you saying. <a href="http://www.jeffblankenburg.com/index.html">Jeff</a> introduced me to <a href="http://www.colinneller.com/blog/">Colin Neller</a>, president of MNUG, when I was in Vegas for Mix, and he invited me down after I expressed a little interest in getting out to do some speaking. My topic in Memphis is as yet undecided. Colin has a poll up in the MNUG forums for either an MVC deep dive or my Evangelizing the Pragmatic Programmer talk. Can't wait to see the results. It's 50/50 at the moment, so if you're in the Memphis area get your vote in...you could be the deciding vote!</p>
+
+<p>That ends my scheduled trips at the moment, who knows what I'll rope myself into as August comes along.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2008/06/17/the-summer-tour-of-timbo.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Monday, June  9, 2008</div>
+
+    <h2 class="index-link"><a href="/2008/06/09/how-i-got-started-programming.html">How I Got Started Programming</a></h2>
+    <div class="post">
+
+  <h2>How I Got Started Programming</h2>
+
+<p>I got called out by <a href="http://www.jeffblankenburg.com/2008/06/software-development-meme.html">Jeff</a> in his post on the same subject. I believe this idea can be traced back to <a href="http://www.michaeleatonconsulting.com/blog/archive/2008/06/04/how-did-you-get-started-in-software-development.aspx">Michael</a>, and it's a pretty good idea. It's nice to see how our friends and colleagues have progressed.</p>
+
+<p>Fair warning, this could get long winded. I am, after all, talking about my favorite subject...me. :)</p>
+
+<h3>How old were you when you started programming?</h3>
+
+<p>I think I was 12 when I first wrote some kind of program. Christmas of my 7th grade year, Ma and Pa Wingfield bought an Apple IIe, along with a couple games. However, I quickly got bored with the games and wanted to make that machine do the stuff I wanted. I talked mom into springing for the 128k upgrade card, and I got down to writing some BASIC programs.</p>
+
+<p>Between the 7th and 8th grade, mom actually sent me to Ohio State to "Computer Camp." It was like Code Mash '83. A bunch of 12-14 year olds on OSU's campus for a week writing code. Oddly enough, at the time I was an "Apple Guy" because that's what we had at home, but all the machines at the camp were IBM's. So, I basically just focused on the BASIC code, and not all the screwy graphics stuff that only worked on the IBMs.</p>
+
+<h3>How did you get started in programming?</h3>
+
+<p>Through High School, I did very little programming. Females and football were my main focus, and after graduating I was off to OSU to get an Ag Econ degree. While at OSU I did take a beginning programming course, and it was one of the few courses I enjoyed. (Didn't take the hint, though.) In it, we were writing PASCAL on Macs...back to the Apple. (The irony is getting thick, here.)</p>
+
+<p>After that class at OSU I let my programming gene slip again, and didn't really take it back up until I got a 486 in '93. After getting that, and with the web boom right around the corner, HTML and javascript were intriguing, so I hobbied around with them for a while. Then, got serious and went to Franklin to work on getting a CS degree. That's when it all started to come together and I figured out I really was a computer guy at heart. (At FU I did most work on a UNIX system...no Apple this time, but no PC, either.)</p>
+
+<h3>What was your first language?</h3>
+
+<p>As noted above my first language was BASIC on the Apple. Lots of GOTOs in my code, too. Nothing brought my 128k expansion card to it's knees quicker than a nice infinite GOTO loop.</p>
+
+<h3>What was the first real program you wrote?</h3>
+
+<p>This is kind of a two parter for me. The first large program I got working was a Stock Market simulator I copied out of a magazine. I made a few minor tweaks to it to make the stocks move faster and change the companies that were traded.</p>
+
+<p>But, the first real program I wrote from scratch was a farming simulator when I was in the 8th grade for the IIe. I grew up on a grain farm, and decided to write a simulator for planting, harvesting, and trading grain. I titled the program "Appleculture" which I thought was pretty snappy. The most difficult part of the game to program was the random number stuff to make the grain prices move, but not move too much. And to make them trend up or down, not taking huge jumps in the opposite direction it took the turn before. It got pretty involved. It also had a banking portion to it, so I guess I was staring my "line of business app" future square in the face there and didn't even know it.</p>
+
+<h3>What languages have you used since you started programming?</h3>
+
+<p>Hmmm...BASIC, PASCAL, C++, Java, VB 5, HTML, Javascript, ASP, VBScript, PHP, C#, VB.Net, Ruby (just getting started on that one)</p>
+
+<h3>What was your first professional programming gig?</h3>
+
+<p>First professional programming gig was at a small lighting manufacturing company near the airport back in about 1997, I believe. I was brought in to build the website, oversee the computer systems, and do some other things around the building. Turned out the guy that owned the company wasn't all that good at delegating, so it ended up being more of a production manager position than web position. I did get the website launched before I left, and it was still the web site up until about 18 months ago. (Which is really kind of sad.)</p>
+
+<h3>If you knew then what you know now, would you have started programming?</h3>
+
+<p>Yes. If I knew then what I know now, I would have started focusing on programming much sooner. My real programming life didn't start until I was about 26 or so, even though I was writing random grain price generators when I was 13.</p>
+
+<h3>If there is one thing you learned along the way that you would tell new developers, what would it be?</h3>
+
+<p>I'll have to follow the crowd and say soft skills is a big one. Everything is a people problem, so to solve those problems you've got to deal with people. If you think fixing the problem is locking yourself in an office or hunkering down in a cube for endless hours typing away, you're mistaken.</p>
+
+<p>Secondly - can't narrow this one to just one - and I read this in somebody else's post and heard it from Brian Prince, get a mentor or mentors. After leaving the small manufacturing place I've been lucky enough to have at least one person at each company that's been a mentor to me. At Quick it seems I'm surrounded by mentors. In this chosen career you're always learning, if you're not always learning YOU are the problem.</p>
+
+<h3>What's the most fun you've ever had ... programming?</h3>
+
+<p>Not sure I can narrow down a "most fun" time, but my most satisfying time was working on the MCCH project for the Attorney General's office. Simplified explanation, this was the web interface for the Amber Alert system in Ohio. My email address is still in the db for all Amber alerts in the state, and seeing, "Alert canceled, child recovered," come into the inbox always makes me feel good.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2008/06/09/how-i-got-started-programming.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Monday, April 28, 2008</div>
+
+    <h2 class="index-link"><a href="/2008/04/28/code-and-coffee.html">Code and Coffee</a></h2>
+    <div class="post">
+
+  <h2>Code and Coffee</h2>
+
+<p>After a great day at <a href="http://kalamazoox.org/">Kalamazoo X</a>, and a conversation with <a href="http://mvwood.com/">Mike Wood</a> about his Bitslinger idea in Cincy. <a href="http://www.jeffblankenburg.com/">Jeff</a> and I had a few hours in the truck headed south to work out something for Columbus, so <a href="http://codeandcoffee.info/">Code and Coffee</a> was born.</p>
+
+<p>OK, we hatched the general idea…meet at a coffee shop on Thursday mornings, write code. I came up with the name and bought the domain. :)</p>
+
+<p>The idea is straight forward: Show up at our coffee shop of choice, bring a laptop, pair up, and have fun writing some code.</p>
+
+<p>Check out <a href="http://codeandcoffee.info/">codeandcoffee.info/</a> and join us if you can.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2008/04/28/code-and-coffee.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Saturday, April  5, 2008</div>
+
+    <h2 class="index-link"><a href="/2008/04/05/video-on-ye-ol-blackjack-ii.html">Video on ye ol Blackjack II</a></h2>
+    <div class="post">
+
+  <h2>Video on ye ol Blackjack II</h2>
+
+<p>Got a short trip coming up soon which will involve me and my youngest, Alex, hopping on a plane for a couple of hours. Being tech-ish, and wanting to pack light, I figured I'd get a couple of episodes of Spongebob from iTunes, and we'd have one entertained 5 year old via my Nano.</p>
+
+<p>But, the Nano has one small screen. And, hey, look at that...the screen on my Blackjack is about TWICE as big! Light bulbs go off everywhere...</p>
+
+<p>Went something like this...</p>
+
+<p>Blackjack runs Windows, and has windows media player. I've got a ton of .avi movies, let's load one up!</p>
+
+<p>[Failure]</p>
+
+<p>OK, it's a stripped down version of media player, we'll just convert that sucker to a .wmv file and we'll be in business!! Google up a video converter and find <a href="http://www.nchsoftware.com/prism/plus.html">Prism</a>. Free, and does the trick. So, about 90 minutes later...30 minutes for the conversion, 60 minutes for Vista to kindly copy it to my Blackjack...we're pressing play on the Blackjack.</p>
+
+<p>[Failure]</p>
+
+<p>Mother puss bucket...in a moment of weakness, I email fellow BJII noob <a href="http://stevenharman.net/">Harman</a>. I figured his newly bestowed MVP status has given him great powers over all things Microsoft. It did, "Email Keith Elder, he's the mobile wizard."</p>
+
+<p>I email <a href="http://keithelder.net/blog/">The Elder</a>, who promptly replies with, "Yikes, that's the one thing I've never tried on my phone!" Keith did direct me to another converter, Pocket DVD Wizard. This one is $25 with a free trial, which I snagged as it will give me 5 minutes of a movie converted to the format I need.</p>
+
+<p>Fire up Pocket DVD Wizard, which asks what device I'll be using. Select Samsung, and the secret is revealed: The file type needs to be .3gp. With the conversion complete, I copy 5 minutes of <a href="http://www.imdb.com/title/tt0114709/">Toy Story</a> to the Blackjack, and...</p>
+
+<p>[Success!!]</p>
+
+<p>Short lived success, though, as it will only play in a tiny window. Flipping it to full screen makes it very pixelated and choppy. The window it plays in is smaller than that of the Nano, so back to square one.</p>
+
+<p>Well, back to square 1.5. We're now converting a couple of those .avi files to .mp4 for the Nano. I figure the 4GB Nano will get us to and from Orlando, keep Alex occupied, and I'll use my Blackjack as an mp3 player for myself.</p>
+
+<p>Assuming I can get that to work...</p>
+
+<p>Oh, and Alex has no idea about the trip, it's a big surprise for him. Don't tell him!</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2008/04/05/video-on-ye-ol-blackjack-ii.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+</div>
+
+
+  <div id="pagination">
+    <ol>
+      
+      <li>
+        
+        <a href="/page10" title="Go to previous page">
+          &laquo; previous 
+        </a>
+        
+      </li>
+      
+
+      
+      <li>
+        
+          
+          <a href="/">1</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page2">2</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page3">3</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page4">4</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page5">5</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page6">6</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page7">7</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page8">8</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page9">9</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page10">10</a>
+          
+        
+      </li>
+      
+      <li>
+        
+        11
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page12">12</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page13">13</a>
+          
+        
+      </li>
+      
+
+      
+      <li>
+        <a href="/page12" title="Go to next page">
+          next &raquo; 
+        </a>
+      </li>
+      
+    </ol>
+    <div style="clear: both; height: 0px">.</div>
+  </div>
+
+
+<script type="text/javascript">
+  $(function(){
+    $(".post h2").hide();
+    $(".post .timestap").hide();
+  });
+</script>
+
+<script type="text/javascript">
+    var disqus_shortname = 'timwingfield';
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+
+          </div>
+        </div>
+      </div><!-- end content -->
+      
+      <div id="sidebar">
+        <ul>
+          <li>
+            <h2>Find me on...</h2>
+            <ul>
+              <li><a href="http://twitter.com/timwingfield">twitter</a></li>
+              <li><a href="http://timwingfield.tumblr.com">tumblr</a></li>
+              <li><a href="http://www.facebook.com/tim.wingfield">facebook</a></li>
+              <li><a href="http://www.linkedin.com/pub/tim-wingfield/8/89/213">linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>Categories</h2>
+            <ul>
+            
+              <li><a href="/categories/Codemash/index.html">Codemash</a></li>
+            
+              <li><a href="/categories/conference/index.html">conference</a></li>
+            
+              <li><a href="/categories/development/index.html">development</a></li>
+            
+              <li><a href="/categories/ajax/index.html">ajax</a></li>
+            
+              <li><a href="/categories/tech-fun/index.html">tech-fun</a></li>
+            
+              <li><a href="/categories/PragProg/index.html">PragProg</a></li>
+            
+              <li><a href="/categories/testing/index.html">testing</a></li>
+            
+              <li><a href="/categories/TDD/index.html">TDD</a></li>
+            
+              <li><a href="/categories/ASP.Net-MVC/index.html">ASP.Net-MVC</a></li>
+            
+              <li><a href="/categories/MVC/index.html">MVC</a></li>
+            
+              <li><a href="/categories/speaking/index.html">speaking</a></li>
+            
+              <li><a href="/categories/mobile/index.html">mobile</a></li>
+            
+              <li><a href="/categories/video/index.html">video</a></li>
+            
+              <li><a href="/categories/kanban/index.html">kanban</a></li>
+            
+              <li><a href="/categories/goals/index.html">goals</a></li>
+            
+              <li><a href="/categories/presentation/index.html">presentation</a></li>
+            
+              <li><a href="/categories/presenting/index.html">presenting</a></li>
+            
+              <li><a href="/categories/development-practices/index.html">development-practices</a></li>
+            
+              <li><a href="/categories/Rails/index.html">Rails</a></li>
+            
+              <li><a href="/categories/Ruby/index.html">Ruby</a></li>
+            
+              <li><a href="/categories/Mac/index.html">Mac</a></li>
+            
+              <li><a href="/categories/career/index.html">career</a></li>
+            
+              <li><a href="/categories/Windows/index.html">Windows</a></li>
+            
+              <li><a href="/categories/Lean/index.html">Lean</a></li>
+            
+              <li><a href="/categories/mongodb/index.html">mongodb</a></li>
+            
+              <li><a href="/categories/Cucumber/index.html">Cucumber</a></li>
+            
+              <li><a href="/categories/IronRuby/index.html">IronRuby</a></li>
+            
+              <li><a href="/categories/Albacore/index.html">Albacore</a></li>
+            
+              <li><a href="/categories/RSpec/index.html">RSpec</a></li>
+            
+              <li><a href="/categories/nUnit/index.html">nUnit</a></li>
+            
+              <li><a href="/categories/continuous-improvement/index.html">continuous-improvement</a></li>
+            
+              <li><a href="/categories/lean/index.html">lean</a></li>
+            
+              <li><a href="/categories/agile/index.html">agile</a></li>
+            
+              <li><a href="/categories/retrospectives/index.html">retrospectives</a></li>
+            
+              <li><a href="/categories/estimation/index.html">estimation</a></li>
+            
+              <li><a href="/categories/sizing/index.html">sizing</a></li>
+            
+              <li><a href="/categories/Jekyll/index.html">Jekyll</a></li>
+            
+              <li><a href="/categories/coaching/index.html">coaching</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end sidebar -->
+
+      <div style="clear: both;">&nbsp;</div>
+
+      <div id="footer">
+        <ul id="footer-menu">
+          <li class="first"><a href="/">Home</a></li>
+          <li><a href="/all.html">All Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+        <p>Copyright &copy;2011 timwingfield.com. All Rights Reserved.</p>
+      </div>
+    </div><!-- end page -->
+  </body>
+</html>

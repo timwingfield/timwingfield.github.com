@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Substantial   
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20100522
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Dropbox, ASP.Net, and a Mac</title>
+    <meta name="author" content="Tim Wingfield" />
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23516986-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/" class="first">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+      </div>
+      <div id="search"></div>
+    </div>
+    <div id="logo">
+      <h1><a href="/">Winging It</a></h1>
+      <p>
+        <img src="http://www.gravatar.com/avatar/1f178e90d4b441b3a1103254a5b3392a.jpg?s=50" />
+        <em>Here's what I got...</em>
+      </p>
+    </div>
+    <hr />
+    <div id="page">
+      <div id="content">
+        <div id="content-bgtop">
+          <div id="content-bgbtm">
+            
+
+<div class="post">
+
+  
+  <div class="timestamp">Sunday, March 21, 2010</div>
+  <h2>Dropbox, ASP.Net, and a Mac</h2>
+
+<p>I recently <a href="/2010/01/03/five-days-with-my-macbook-pro.html">switched to a Mac</a> for my development platform, and have enjoyed the experience so far. Working with zsh and ruby and rails and all kinds of things have been much easier in OSX. Getting down with .Net is still done in Win7 for me, usually on my VM. (I haven’t booted into Windows for .Net development, yet, VMWare has done great.)</p>
+
+<p>I set up my environment so that most everything is saved on the OSX partition, which isn’t a big deal because VMWare just shares folders over to Windows. So, all my files reside in one place. Nice and tidy. I have a Code directory set up to keep my code on one spot (genius on the naming of that directory, I thought). It’s shared over to Windows, and I can get to everything in either OS.</p>
+
+<p>The downside to this plan is that to Windows it’s a network share. If you’ve ever fired up Visual Studio to do some ASP.Net development over a network share, you know it’s not a happy camper. But, I don’t want to duplicate everything for the sake of keeping Studio happy. If I do that for Visual Studio, then I’ll have to do it for everybody, and that’s a slippery slope I don’t want to go down.</p>
+
+<p>A little Googling later, and I find somebody using <a href="http://www.dropbox.com">Dropbox</a> to keep it all synced up. I’m already a happy Dropbox customer, and had the, “Well, duh!” moment as soon as I read it. (If you’d like to become a happy Dropbox customer, <a href="https://www.dropbox.com/referrals/NTIyNzAyMDE5">get an extra 250 MB when you sign up with my invitation</a>. They give me an extra 250 MB, too.)</p>
+
+<p>Pretty easy to set up at that point. I installed Dropbox on the VM, created a folder in it for .Net development, and I was all ready to go. ASP.Net was happy because it was now on a local drive, I was happy because I could still move things in and out of git on the Mac side of things.</p>
+
+<p>I can already hear some howling, “You’re duplicating your code! It’s stored twice on the same machine!” True…but I Dropbox does all the syncing for me, so it’s mostly an afterthought. The upside is that I can get to it with the tools I want in the OS I want whenever I want. Code it up in Studio, grep the VSS files out of it in zsh, commit branch and merge with git on the Mac, and debug away in Windows.</p>
+
+<p>Even though the code files exist twice, the tools don’t. I don’t have git or a text editor installed on Windows because I can use the Mac ones.</p>
+
+<p>Another big downside would be coding sans Internet connection. For the most part Dropbox syncs everything up so quickly I rarely notice it. But, if I’m away from an Internet connection, that’s not going to happen at all, and even though both copies are on the same machine, they’d be out of sync until I get hooked back up. For all practical purposes, this hasn’t been an issue, yet.</p>
+
+<p>Overall, for having a little duplication on the hard drive and an extra layer of something-that-could-go-wrong in there, the experience has been, well, not noticeable. Everything just works, I haven’t had to wait on Dropbox to finish syncing files yet, and I get to use the right tool for the right job.</p>
+
+  <div id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'timwingfield';
+        
+        
+
+        var disqus_url = 'http://blog.timwingfield.com/2010/03/21/dropbox-aspnet-and-a-mac.html';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+          </div>
+        </div>
+      </div><!-- end content -->
+      
+      <div id="sidebar">
+        <ul>
+          <li>
+            <h2>Find me on...</h2>
+            <ul>
+              <li><a href="http://twitter.com/timwingfield">twitter</a></li>
+              <li><a href="http://timwingfield.tumblr.com">tumblr</a></li>
+              <li><a href="http://www.facebook.com/tim.wingfield">facebook</a></li>
+              <li><a href="http://www.linkedin.com/pub/tim-wingfield/8/89/213">linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>Categories</h2>
+            <ul>
+            
+              <li><a href="/categories/Codemash/index.html">Codemash</a></li>
+            
+              <li><a href="/categories/conference/index.html">conference</a></li>
+            
+              <li><a href="/categories/development/index.html">development</a></li>
+            
+              <li><a href="/categories/ajax/index.html">ajax</a></li>
+            
+              <li><a href="/categories/tech-fun/index.html">tech-fun</a></li>
+            
+              <li><a href="/categories/PragProg/index.html">PragProg</a></li>
+            
+              <li><a href="/categories/testing/index.html">testing</a></li>
+            
+              <li><a href="/categories/TDD/index.html">TDD</a></li>
+            
+              <li><a href="/categories/ASP.Net-MVC/index.html">ASP.Net-MVC</a></li>
+            
+              <li><a href="/categories/MVC/index.html">MVC</a></li>
+            
+              <li><a href="/categories/speaking/index.html">speaking</a></li>
+            
+              <li><a href="/categories/mobile/index.html">mobile</a></li>
+            
+              <li><a href="/categories/video/index.html">video</a></li>
+            
+              <li><a href="/categories/kanban/index.html">kanban</a></li>
+            
+              <li><a href="/categories/goals/index.html">goals</a></li>
+            
+              <li><a href="/categories/presentation/index.html">presentation</a></li>
+            
+              <li><a href="/categories/presenting/index.html">presenting</a></li>
+            
+              <li><a href="/categories/development-practices/index.html">development-practices</a></li>
+            
+              <li><a href="/categories/Rails/index.html">Rails</a></li>
+            
+              <li><a href="/categories/Ruby/index.html">Ruby</a></li>
+            
+              <li><a href="/categories/Mac/index.html">Mac</a></li>
+            
+              <li><a href="/categories/career/index.html">career</a></li>
+            
+              <li><a href="/categories/Windows/index.html">Windows</a></li>
+            
+              <li><a href="/categories/Lean/index.html">Lean</a></li>
+            
+              <li><a href="/categories/mongodb/index.html">mongodb</a></li>
+            
+              <li><a href="/categories/Cucumber/index.html">Cucumber</a></li>
+            
+              <li><a href="/categories/IronRuby/index.html">IronRuby</a></li>
+            
+              <li><a href="/categories/Albacore/index.html">Albacore</a></li>
+            
+              <li><a href="/categories/RSpec/index.html">RSpec</a></li>
+            
+              <li><a href="/categories/nUnit/index.html">nUnit</a></li>
+            
+              <li><a href="/categories/continuous-improvement/index.html">continuous-improvement</a></li>
+            
+              <li><a href="/categories/lean/index.html">lean</a></li>
+            
+              <li><a href="/categories/agile/index.html">agile</a></li>
+            
+              <li><a href="/categories/retrospectives/index.html">retrospectives</a></li>
+            
+              <li><a href="/categories/estimation/index.html">estimation</a></li>
+            
+              <li><a href="/categories/sizing/index.html">sizing</a></li>
+            
+              <li><a href="/categories/Jekyll/index.html">Jekyll</a></li>
+            
+              <li><a href="/categories/coaching/index.html">coaching</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end sidebar -->
+
+      <div style="clear: both;">&nbsp;</div>
+
+      <div id="footer">
+        <ul id="footer-menu">
+          <li class="first"><a href="/">Home</a></li>
+          <li><a href="/all.html">All Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+        <p>Copyright &copy;2011 timwingfield.com. All Rights Reserved.</p>
+      </div>
+    </div><!-- end page -->
+  </body>
+</html>

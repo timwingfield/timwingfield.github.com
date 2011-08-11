@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Substantial   
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20100522
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Don't Hide Behind a Catch Block</title>
+    <meta name="author" content="Tim Wingfield" />
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23516986-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/" class="first">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+      </div>
+      <div id="search"></div>
+    </div>
+    <div id="logo">
+      <h1><a href="/">Winging It</a></h1>
+      <p>
+        <img src="http://www.gravatar.com/avatar/1f178e90d4b441b3a1103254a5b3392a.jpg?s=50" />
+        <em>Here's what I got...</em>
+      </p>
+    </div>
+    <hr />
+    <div id="page">
+      <div id="content">
+        <div id="content-bgtop">
+          <div id="content-bgbtm">
+            
+
+<div class="post">
+
+  
+  <div class="timestamp">Saturday, February 23, 2008</div>
+  <h2>Don't Hide Behind a Catch Block</h2>
+
+<p>"Pragmatic Programmer tip #32: Crash Early."</p>
+
+<p>I've been recently tasked with some refactoring items. Like any project that's longer than 8 weeks, you'll dig into some code and find yourself going, "What was I thinking with THIS?" Or, if the project's a bit longer, you wonder if you came up with this gem (and no, not a Ruby gem) or if somebody else on the team left this odor in the code.</p>
+
+<p>The code smell of this particular blog post is the abuse of the try/catch block. I've stumbled across a few uses of the try/catch programatically, or worse, using an empty catch block to hide an issue you're not sure how to deal with.</p>
+
+<p>Right off the top will go with the empty catch block. I encountered a few of these while refactoring, and had to wonder why we were hiding behind the empty catch block. Crash early, but when you crash sweep that under the rug and move on? That's not good. If you need a catch block, then isn't there something you should be catching? Take the following for an example:</p>
+
+<p>[Image lost to time and the Internet...]</p>
+
+<p>That's a pretty simple little conversion function, with the dreaded empty catch block in there. It's there not because of the TryParse, which is going to give you a false if it fails its own try, but because applying ToString to a null object is going to throw an object error. Rather than the empty catch, why not a null check on o? Then you know what you're dealing with rather than not caring and returning 0 for anything you're not expecting. To me, this is a classic garbage in, garbage out scenario. You pass in a null or an object that can't be converted to a an int and you get a 0.</p>
+
+<p>Next up was a bit of sheer genius, and throwing my hands up when dealing with nHibernate. Rather than find out what was going on, I resorted to using a try/catch procedurally to handle the issue. Here's a bit of code that shows my brilliant solution:</p>
+
+<p>[Image lost to time and the Internet...]</p>
+
+<p>The issue there turned out to be that we were <a href="http://toddkaufman.blogspot.com/2008/02/failing-to-fail-early.html">using the load method from nHibernate rather than the get</a>, so I didn't have null object to check. I had an actual proxy object full of null properties. My solution, duck behind the catch block and make it bend to my will. If the load found something, the id check would pass and I'm doing an update. If the resulting object error from the property check threw, then I'm dealing with a new object, time for an insert.</p>
+
+<p>In this case my ignorance of nHibernate's dealing with objects was the problem, but ignorance is no excuse. Using the try/catch in this manner was a hack with Paul Bunyan's ax. It got me moving foward, but was a bad solution.</p>
+
+<p>The final empty catch falls in the same lines, where ignorance of what was available to us wasn't found until much later. This empty catch block example was saving us from a null reference error in a nullable data type in a data bind method.</p>
+
+<p>[Image lost to time and the Internet...]</p>
+
+<p>Getting rid of this empty catch may have been the easiest of the three, because nullable data types carry a "HasValue" property that tells you, well, if they have a value. The refactored code looked like:</p>
+
+<p>[Image lost to time and the Internet...]</p>
+
+<p>Using the HasValue property, we can refactor this one down to the always elegant ternary operator. We know what value we have or don't have and can cleanly bind our data to what's in this case a grid column.</p>
+
+<p>If you're going to fail early, don't hide the failure. Figure out what it is and write the correct code for it. The try/catch is there to help you handle exceptions, not to hide them and move on.</p>
+
+  <div id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'timwingfield';
+        
+        
+
+        var disqus_url = 'http://blog.timwingfield.com/2008/02/23/dont-hide-behind-a-catch-block.html';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+          </div>
+        </div>
+      </div><!-- end content -->
+      
+      <div id="sidebar">
+        <ul>
+          <li>
+            <h2>Find me on...</h2>
+            <ul>
+              <li><a href="http://twitter.com/timwingfield">twitter</a></li>
+              <li><a href="http://timwingfield.tumblr.com">tumblr</a></li>
+              <li><a href="http://www.facebook.com/tim.wingfield">facebook</a></li>
+              <li><a href="http://www.linkedin.com/pub/tim-wingfield/8/89/213">linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>Categories</h2>
+            <ul>
+            
+              <li><a href="/categories/Codemash/index.html">Codemash</a></li>
+            
+              <li><a href="/categories/conference/index.html">conference</a></li>
+            
+              <li><a href="/categories/development/index.html">development</a></li>
+            
+              <li><a href="/categories/ajax/index.html">ajax</a></li>
+            
+              <li><a href="/categories/tech-fun/index.html">tech-fun</a></li>
+            
+              <li><a href="/categories/PragProg/index.html">PragProg</a></li>
+            
+              <li><a href="/categories/testing/index.html">testing</a></li>
+            
+              <li><a href="/categories/TDD/index.html">TDD</a></li>
+            
+              <li><a href="/categories/ASP.Net-MVC/index.html">ASP.Net-MVC</a></li>
+            
+              <li><a href="/categories/MVC/index.html">MVC</a></li>
+            
+              <li><a href="/categories/speaking/index.html">speaking</a></li>
+            
+              <li><a href="/categories/mobile/index.html">mobile</a></li>
+            
+              <li><a href="/categories/video/index.html">video</a></li>
+            
+              <li><a href="/categories/kanban/index.html">kanban</a></li>
+            
+              <li><a href="/categories/goals/index.html">goals</a></li>
+            
+              <li><a href="/categories/presentation/index.html">presentation</a></li>
+            
+              <li><a href="/categories/presenting/index.html">presenting</a></li>
+            
+              <li><a href="/categories/development-practices/index.html">development-practices</a></li>
+            
+              <li><a href="/categories/Rails/index.html">Rails</a></li>
+            
+              <li><a href="/categories/Ruby/index.html">Ruby</a></li>
+            
+              <li><a href="/categories/Mac/index.html">Mac</a></li>
+            
+              <li><a href="/categories/career/index.html">career</a></li>
+            
+              <li><a href="/categories/Windows/index.html">Windows</a></li>
+            
+              <li><a href="/categories/Lean/index.html">Lean</a></li>
+            
+              <li><a href="/categories/mongodb/index.html">mongodb</a></li>
+            
+              <li><a href="/categories/Cucumber/index.html">Cucumber</a></li>
+            
+              <li><a href="/categories/IronRuby/index.html">IronRuby</a></li>
+            
+              <li><a href="/categories/Albacore/index.html">Albacore</a></li>
+            
+              <li><a href="/categories/RSpec/index.html">RSpec</a></li>
+            
+              <li><a href="/categories/nUnit/index.html">nUnit</a></li>
+            
+              <li><a href="/categories/continuous-improvement/index.html">continuous-improvement</a></li>
+            
+              <li><a href="/categories/lean/index.html">lean</a></li>
+            
+              <li><a href="/categories/agile/index.html">agile</a></li>
+            
+              <li><a href="/categories/retrospectives/index.html">retrospectives</a></li>
+            
+              <li><a href="/categories/estimation/index.html">estimation</a></li>
+            
+              <li><a href="/categories/sizing/index.html">sizing</a></li>
+            
+              <li><a href="/categories/Jekyll/index.html">Jekyll</a></li>
+            
+              <li><a href="/categories/coaching/index.html">coaching</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end sidebar -->
+
+      <div style="clear: both;">&nbsp;</div>
+
+      <div id="footer">
+        <ul id="footer-menu">
+          <li class="first"><a href="/">Home</a></li>
+          <li><a href="/all.html">All Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+        <p>Copyright &copy;2011 timwingfield.com. All Rights Reserved.</p>
+      </div>
+    </div><!-- end page -->
+  </body>
+</html>

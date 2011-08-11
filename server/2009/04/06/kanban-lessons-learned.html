@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Substantial   
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20100522
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Kanban Lessons Learned</title>
+    <meta name="author" content="Tim Wingfield" />
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23516986-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/" class="first">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+      </div>
+      <div id="search"></div>
+    </div>
+    <div id="logo">
+      <h1><a href="/">Winging It</a></h1>
+      <p>
+        <img src="http://www.gravatar.com/avatar/1f178e90d4b441b3a1103254a5b3392a.jpg?s=50" />
+        <em>Here's what I got...</em>
+      </p>
+    </div>
+    <hr />
+    <div id="page">
+      <div id="content">
+        <div id="content-bgtop">
+          <div id="content-bgbtm">
+            
+
+<div class="post">
+
+  
+  <div class="timestamp">Monday, April  6, 2009</div>
+  <h2>Kanban Lessons Learned</h2>
+
+<p>After seeing success with Kanban in a production support environment (<a href="/2008/11/16/kanban-o-rama-part-1.html">part 1</a>, <a href="/2008/11/19/kanban-o-rama-part-2.html">part 2</a>), we decided to give it a try in a new development situation. This project was a mix of new development and working with an inherited code base to implement some existing features differently.</p>
+
+<p>Because of this situation, we ended up with a mixed bag of features. At the onset, we decided to break these features out into tasks, and we would track both across our Kanban board, as shown here with a snapshot of our Work In Progress section.
+<img src="/images/posts/tl-kanban-board.jpg" alt="Project Kanban Board" /></p>
+
+<p>Features were broken into tasks and grouped together in the backlog. Once a feature went into WIP, it's tasks moved below into the Task Breakout section and were worked there. Once all tasks were completed, they were once again compiled back into a feature and went into test as a whole.</p>
+
+<p>What we tried to accomplish here was to keep the concept of a MMF while still breaking the work into smaller, more manageable units. What ended up happening was that features themselves became secondary to almost full task development, however we were tracking features through the system for our cycle time. Early, heavy task features that focused more on the business model skewed the cycle time higher, and later UI tweaking features sent it lower. As such, our cycle time diminished quickly as the deadline drew near...a good thing, but I don't think it was totally attributable to the team's momentum.</p>
+
+<p>I think we failed here in poor estimation of what lie in front of us when we started. A good bit of this is the situation we were in at the onset where we were under pressure to start getting things moving right away, and we didn't give much credence to estimating later features very well. That wasn't really a Kanban issue, and we should have known better. The excuse is we had very little time to ramp up on the discovery side of things when we got the project, but it would just be an excuse...we should have known better.</p>
+
+<p>One final area where we had some issues was in reporting where exactly we stood in features completed. We were fairly visible on this project, and had a lot of interest in our success by the due date. (OK, what project doesn't?) While you could look at the board and see what was being worked at any given point, due to the lack of good feature estimation up front, it was hard to see where we were in the big picture. In the latter half of the project we stole ourselves a project manager, and she did a bang up job of getting that information worked out, but she did struggle in figuring it out. Again, I think she had trouble due to the lack of good estimation up front.</p>
+
+<p>It wasn't all pain and suffering as we moved our cards across the board.</p>
+
+<p>One good thing we got out of the board was it was easily changed to fit our constantly changing team size and make up. We started out as three developers, and ended as four developers - two different than the original three, one PM, and one QA person. Being able to walk up to the board and change the queue limits on feature WIP, task development, and features in test made things flow quite smoothly as the project moved along. It did a good job of identifying a few roadblocks and getting them out of the way, as well.</p>
+
+<p>As noted earlier, our cycle time did drop as we neared the due date. Part of that was due to the smaller features coming through later, but there was a good bit of momentum on the dev team, too. Morale stayed fairly good as we kept moving things into the done envelope at the right side of the board.</p>
+
+<p>I still think we were successful with Kanban in this situation, but clearly I think we need some refinements around how we did it on this project. I'll save those ideas for my next post.</p>
+
+  <div id="comments">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'timwingfield';
+        
+        
+
+        var disqus_url = 'http://blog.timwingfield.com/2009/04/06/kanban-lessons-learned.html';
+
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+
+</div>
+
+
+          </div>
+        </div>
+      </div><!-- end content -->
+      
+      <div id="sidebar">
+        <ul>
+          <li>
+            <h2>Find me on...</h2>
+            <ul>
+              <li><a href="http://twitter.com/timwingfield">twitter</a></li>
+              <li><a href="http://timwingfield.tumblr.com">tumblr</a></li>
+              <li><a href="http://www.facebook.com/tim.wingfield">facebook</a></li>
+              <li><a href="http://www.linkedin.com/pub/tim-wingfield/8/89/213">linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>Categories</h2>
+            <ul>
+            
+              <li><a href="/categories/Codemash/index.html">Codemash</a></li>
+            
+              <li><a href="/categories/conference/index.html">conference</a></li>
+            
+              <li><a href="/categories/development/index.html">development</a></li>
+            
+              <li><a href="/categories/ajax/index.html">ajax</a></li>
+            
+              <li><a href="/categories/tech-fun/index.html">tech-fun</a></li>
+            
+              <li><a href="/categories/PragProg/index.html">PragProg</a></li>
+            
+              <li><a href="/categories/testing/index.html">testing</a></li>
+            
+              <li><a href="/categories/TDD/index.html">TDD</a></li>
+            
+              <li><a href="/categories/ASP.Net-MVC/index.html">ASP.Net-MVC</a></li>
+            
+              <li><a href="/categories/MVC/index.html">MVC</a></li>
+            
+              <li><a href="/categories/speaking/index.html">speaking</a></li>
+            
+              <li><a href="/categories/mobile/index.html">mobile</a></li>
+            
+              <li><a href="/categories/video/index.html">video</a></li>
+            
+              <li><a href="/categories/kanban/index.html">kanban</a></li>
+            
+              <li><a href="/categories/goals/index.html">goals</a></li>
+            
+              <li><a href="/categories/presentation/index.html">presentation</a></li>
+            
+              <li><a href="/categories/presenting/index.html">presenting</a></li>
+            
+              <li><a href="/categories/development-practices/index.html">development-practices</a></li>
+            
+              <li><a href="/categories/Rails/index.html">Rails</a></li>
+            
+              <li><a href="/categories/Ruby/index.html">Ruby</a></li>
+            
+              <li><a href="/categories/Mac/index.html">Mac</a></li>
+            
+              <li><a href="/categories/career/index.html">career</a></li>
+            
+              <li><a href="/categories/Windows/index.html">Windows</a></li>
+            
+              <li><a href="/categories/Lean/index.html">Lean</a></li>
+            
+              <li><a href="/categories/mongodb/index.html">mongodb</a></li>
+            
+              <li><a href="/categories/Cucumber/index.html">Cucumber</a></li>
+            
+              <li><a href="/categories/IronRuby/index.html">IronRuby</a></li>
+            
+              <li><a href="/categories/Albacore/index.html">Albacore</a></li>
+            
+              <li><a href="/categories/RSpec/index.html">RSpec</a></li>
+            
+              <li><a href="/categories/nUnit/index.html">nUnit</a></li>
+            
+              <li><a href="/categories/continuous-improvement/index.html">continuous-improvement</a></li>
+            
+              <li><a href="/categories/lean/index.html">lean</a></li>
+            
+              <li><a href="/categories/agile/index.html">agile</a></li>
+            
+              <li><a href="/categories/retrospectives/index.html">retrospectives</a></li>
+            
+              <li><a href="/categories/estimation/index.html">estimation</a></li>
+            
+              <li><a href="/categories/sizing/index.html">sizing</a></li>
+            
+              <li><a href="/categories/Jekyll/index.html">Jekyll</a></li>
+            
+              <li><a href="/categories/coaching/index.html">coaching</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end sidebar -->
+
+      <div style="clear: both;">&nbsp;</div>
+
+      <div id="footer">
+        <ul id="footer-menu">
+          <li class="first"><a href="/">Home</a></li>
+          <li><a href="/all.html">All Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+        <p>Copyright &copy;2011 timwingfield.com. All Rights Reserved.</p>
+      </div>
+    </div><!-- end page -->
+  </body>
+</html>

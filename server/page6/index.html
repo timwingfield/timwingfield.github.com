@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Substantial   
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20100522
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Winging It</title>
+    <meta name="author" content="Tim Wingfield" />
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23516986-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/" class="first">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+      </div>
+      <div id="search"></div>
+    </div>
+    <div id="logo">
+      <h1><a href="/">Winging It</a></h1>
+      <p>
+        <img src="http://www.gravatar.com/avatar/1f178e90d4b441b3a1103254a5b3392a.jpg?s=50" />
+        <em>Here's what I got...</em>
+      </p>
+    </div>
+    <hr />
+    <div id="page">
+      <div id="content">
+        <div id="content-bgtop">
+          <div id="content-bgbtm">
+            <div id="home">
+  
+    <div>
+    
+    <div class="timestamp">Tuesday, December 22, 2009</div>
+
+    <h2 class="index-link"><a href="/2009/12/22/beware-your-buffering.html">Beware Your Buffering</a></h2>
+    <div class="post">
+
+  <h2>Beware Your Buffering</h2>
+
+<p>In a twitter discussion that was centering around some Kanban joy, the point of buffering came up. I offered <a href="http://twitter.com/timwingfield/status/6944584935">a bit of twitter-esque advice</a>, meaning it was short, could be interpreted as terse, and lacked the detail it needed. As any good friend would do, <a href="http://twitter.com/ajimholmes">Jim</a> called me out for my 140 character bit of guidance.</p>
+
+<p>So, in more than 140 characters…</p>
+
+<p>Be careful with your queues on your Kanban board. (I say queue here, because a buffer is just the queue for the next step.) By definition, any queue is waste. It’s a step in the process where something is waiting, therefore value isn’t being provided to your customer.</p>
+
+<p>Can queues be used effectively? Yes. Quite effectively, but you have to stay on top of them. In reality, there has to be some queuing going on to give a pull system something to pull. In practice, those queues need to be as small as you can keep them to keep things flowing.</p>
+
+<p>My tweet that started this mess was that I’d been burned by buffers on more than one occasion. Here’s one nasty one where the queue wasn’t a help, it was hiding the real problem.</p>
+
+<p>We had a project where our developers far outnumbered our testers. This isn’t an unheard of scenario in the world of software development, but we handled it badly on our Kanban board. We ended up with not one, but two buffers between the dev team and the QA folks. The true, root cause problem was we had a resource problem because we needed more testers. Instead, we masked it with some queuing.</p>
+
+<p>The biggest problem was that we lost our short feedback loop from development to demo. Early in the process, we’d complete a feature and it would demo within a day or two. As the project progressed and the developers’ momentum took off, the testing team was backed up and the feedback loop grew. Bugs were sitting open longer, code complete features waited to be tested, and the churn began.</p>
+
+<p>Our solution was to swarm the test queue to get it lowered. Having a dev or two help get some testing done got our backed up test queue fixed, but it put devs in a testing role which I’m not a big fan of doing. (Devs are notorious for making sure something works rather than looking for ways something could break.) Also, this solution was very temporary as the queue naturally filled back up once the dev team was back in high gear. The actual solution: add a testing resource. Our full queues told us that, but we didn’t listen too closely for a while.</p>
+
+<p>In the end, some buffers and queues are inevitable in many situations. However, make sure to do the following:</p>
+
+<ol>
+<li><p>Make them as small as you can, maybe half the size of the queue limit of the step that the buffer is feeding. Adjust as necessary, but don’t keep increasing it as it fills up.</p></li>
+<li><p>If you need to increase its size, ask why a couple times to clear it up. If the answer is, “Because we need more room!” then look at the next step and see why it’s backing up your process.</p></li>
+</ol>
+
+
+<p>So, back to what started all this…buffers can bite you in the butt as they tend to mask the issue rather than solving it. Make sure your buffers aren’t hiding a bigger problem.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2009/12/22/beware-your-buffering.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Thursday, December 10, 2009</div>
+
+    <h2 class="index-link"><a href="/2009/12/10/rails-study-apps.html">Rails Study Apps</a></h2>
+    <div class="post">
+
+  <h2>Rails Study Apps</h2>
+
+<p>I’m trying to pick up some rails in my spare time. Been plugging away at my pet project when I can, which leads to a lot of googling while I do it. If one of my known Rubyist friends is at a <a href="http://www.codeandcoffee.info/">Code and Coffee</a> session, I spend a fair amount of time picking their brains and pairing up to learn what I can in an hour or so.</p>
+
+<p>That all works pretty well, but at my pace I’ll be forever getting my Ruby code to look less like C# and more like Ruby. So, as <a href="http://stevenharman.net/blog/archive/2009/11/18/reading-code-is-key-to-writing-good-code.aspx">Steve blogged recently</a>, why not find a few Rails apps to read? So, I hit up my twitter friends: <a href="http://twitter.com/timwingfield/status/6464205602">http://twitter.com/timwingfield/status/6464205602</a></p>
+
+<p>I got three pretty good responses, and finally got time tonight to pull them down and take a quick look at them. I don’t have a lot of info on any of them, but I did browse the source to get a feel for what was going on.</p>
+
+<h3>Radiant CMS</h3>
+
+<p><a href="http://github.com/radiant/radiant">http://github.com/radiant/radiant</a></p>
+
+<p>This one was recommended by <a href="http://twitter.com/dugaldwilson">Dugald Wilson</a>. Decent amount of code here to look at, and uses RSpec for the test framework. This one definitely fit the bill for what I was after.</p>
+
+<h3>Spot.us</h3>
+
+<p><a href="http://github.com/spot-us/spot-us">http://github.com/spot-us/spot-us</a></p>
+
+<p>I got this one as a tag team recommendation from <a href="http://twitter.com/pragma_tech">Scott Walker</a> and <a href="http://twitter.com/mattdarby">Matt Darby</a>. This is a non-profit company doing Community Funded Reporting and is coming from the folks at <a href="http://www.hashrocket.com/">Hashrocket</a>. More RSpec out of this project, and again a fair amount of code to pour over.</p>
+
+<h3>Redmine</h3>
+
+<p><a href="http://github.com/edavis10/redmine">http://github.com/edavis10/redmine</a></p>
+
+<p>The third one came through <a href="http://twitter.com/jamin4jc">Ben Wagaman</a>. This one uses TestUnit instead of RSpec, but still some decent reading. I’m going to have to dig into the tests a bit more on this one, though, because the file names aren’t jumping out at me as model/controller/etc type tests. But, that’s the point of this exercise, to see what other folks are doing.</p>
+
+<p>I’ve got a little flying and a lot of driving ahead of me this weekend, hopefully I get some time to dive deeper into what each of these apps is up to, and get some more Rails code under my belt.</p>
+
+<p>If you’ve come across a few more open source Rails apps out there, please drop a link in the comments.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2009/12/10/rails-study-apps.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Saturday, November 14, 2009</div>
+
+    <h2 class="index-link"><a href="/2009/11/14/aspnet-mvc-a-step-in-the-right-direction.html">ASP.Net MVC - A Step in the Right Direction</a></h2>
+    <div class="post">
+
+  <h2>ASP.Net MVC: A Step in the Right Direction</h2>
+
+<p>A link to Doug Copestake’s article <a href="http://www.thecurlybracket.com/?p=164">“ASP.Net MVP: A Step Backwards?”</a> was forwarded to me, and it made some short rounds on twitter. I read it and had a comment underway and thought, “This is WAY to big for a comment, let’s blog it!” So here we are.</p>
+
+<p>Off the top, I’d like to give a tip of the hat to Doug for stepping outside his day to day and taking a look at ASP.Net MVC. It’s very easy to hide behind FUD and just blow off something different. Additionally, his initial findings are pretty much on par with most other folks happy with WebForms who take their first look at MVC.</p>
+
+<p>The MVC framework definitely provides simplicity and separation of concerns to web development. It allows you to only write the code you need to write to get the job done, and it allows you to work with the framework. Views become very small and very specialized, controller actions mature to be very thin, and it’s all easily testable.</p>
+
+<p>This has made my work with the MVC framework extremely successful. Since everything is easily testable, as we refactor the code to clean it up or add new functionality, it all flows very easily.</p>
+
+<p>Control reuse comes from veteran WebForms developers quite often. But if we again point at simplicity, how many of those drag and drop controls were written to cover more functionality than you need? You drag a grid control out and use 15% of it’s power because its made for everyone. Yes, you can write your own application controls to do exactly what you want, but you can do that in MVC, too.</p>
+
+<p>Another point to control reuse is the leveraging of more javascript frameworks to do many of the things that the WebForm control suites do. In jQuery UI alone, you’ll get tabs, accordion panels, sliders and other UI elements, all with out that “server side” part that is so prevalent in WebForms. The win there is in more than just lighter weight controls, you gain a much better user experience. (And who doesn’t like happy users?)</p>
+
+<p>The spaghetti code point Doug makes is quite valid, though I think that’s not a factor of one framework or the other as much as it is the person writing the code. The <a href="http://www.vanderburg.org/Blog">Glen Vanderburg</a> quote, “A bad developer will move heaven and Earth to do the wrong thing,” applies to all languages and frameworks. The person with the keyboard under their fingers is responsible for keeping their code clean, not the framework developers, but I digress.</p>
+
+<p>Spaghetti code in the views is a big sign that you’ve done something wrong. Even before moving to <a href="http://www.sparkviewengine.com/">Spark</a>, if you see lots of server instructions in your views, it’s time to stop and think, “What can I do differently here?” Same can be said of your controllers. If you’re used to writing a 50 line page load method in WebForms, turning similar code into 50 line controller actions is a step in the wrong direction. I guess the main point here is instead of relying/hoping for the framework to do the work for you, the onus is now squarely on the shoulders of the developer to keep his or her code concise.</p>
+
+<p>Doug’s last point is very true, though: if you have a lot invested in WebForms in your current situation, there’s no real reason to switch away from it. Switching for the sake of switching to anything usually isn’t a good move.</p>
+
+<p>That said, you can easily run WebForms and MVC in the same web application. If you have a little something to add to the project that can stand on its own, I’d say a look at MVC is in order.</p>
+
+<p>This definitely would have been too long of a comment… :)</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2009/11/14/aspnet-mvc-a-step-in-the-right-direction.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Wednesday, October 21, 2009</div>
+
+    <h2 class="index-link"><a href="/2009/10/21/aspnet-mvc-v-webforms.html">ASP.Net MVC v. WebForms</a></h2>
+    <div class="post">
+
+  <h2>ASP.Net MVC v. WebForms</h2>
+
+<p>This question seems to come up a lot in discussions around these two ASP.Net frameworks. Just this past weekend in Cincy at the MVC Firestarter, it came up a number of times.</p>
+
+<p>So, on the way to work this morning, I was listening to <a href="http://www.hanselminutes.com/default.aspx?showID=202">Hanselminutes 184</a>, and the question was FINALLY given an answer by Scott Hunter.</p>
+
+<blockquote><p><em>If you care about separation of concerns, testability and tight control of your markup you should go with MVC. If you’re an enterprise developer and just want to get something out there quickly then use WebForms.</em></p></blockquote>
+
+<p>That’s paraphrased, I may have gotten the MVC reasons in a different order, but that was the point made.</p>
+
+<p>Scary that “Just get it done,” is the main reason to use WebForms. I’ll stick with my “slow” TDD and long term maintainability in MVC and steer clear of WebForms where DDD apparently stands for Drag, Drop, Deploy.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2009/10/21/aspnet-mvc-v-webforms.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Monday, August 31, 2009</div>
+
+    <h2 class="index-link"><a href="/2009/08/31/i-forgot-what-the-m-in-mvc-was-for.html">I forgot what the M in MVC was for</a></h2>
+    <div class="post">
+
+  <h2>I forgot what the M in MVC was for</h2>
+
+<p>What brought me to this conclusion was my reading up on a little Rails. I finally took the dive. I’ve been avoiding Rails for a while in favor of just learning Ruby. <a href="http://twitter.com/stevehorn">Steve</a> loaned me <a href="http://www.pragprog.com/titles/cerailn/rails-for-net-developers">“Rails for .Net Developers,”</a> and the research was underway in earnest.</p>
+
+<p>On page 89, the light bulb went off. But not for Rails so much as for how I’m writing my ASP.Net MVC apps. Here’s the bit that got me:</p>
+
+<ul>
+<li>Models are the classes that represent your business domain and that are responsible for communicating with your data. In Rails, this means the tables in your database.</li>
+<li>Views represent your presentation layer, for example, HTML and JavaScript.</li>
+<li>Controllers are responsible for connecting the models and views and managing the flow of the application.
+<img src="/images/posts/mvc-wrong.png" alt="I'm doing it completely wrong" align="right" /></li>
+</ul>
+
+
+<p>That reads pretty straightforward to me. Hell, I’ve stood in front of groups of devs on more than one occasion and said, “Views are what gets rendered, controllers marry up the views with anything they need from the model, and <strong>the model is everything that’s not a view or a controller.</strong>”</p>
+
+<p>So, what’s been going wrong? I’ve been putting way too much business logic in my controllers.</p>
+
+<p>The structure of most of the MVC apps I’ve worked with is a typical .Net program structure. We’ve got a core where our business domain lives, and some type of ORM set up to talk to the database. From there, we expose that domain up to the UI through some simple domain services.</p>
+
+<p>The issue comes when I consume those services. I’m using my controller actions to marry all that up and present it to the UI. I think my “excuse” to this point has been that I have two models: My domain model, which I’m accessing through my domain services, and my presentation model, which lives in the Models directory in the ASP.Net MVC structure. My controllers have to care about two places to get their information to provide to the views. At the least I’m violating the pattern and at worst I’m likely repeating myself somewhere and creating a future maintenance issue.</p>
+
+<p>I think I can see where this happened, too. Think back to the Bad Old Days of dealing with Web Forms, and the cubby code behinds that came with it. In order to avoid the 197 line PageLoad method, I would have a lot of little one-off methods scattered about the code behind file. Switch over to MVC, and it seemed perfectly normal to have a similar structure. Alarms should have gone off when I had 5 classes in the Models directory but 18 methods in one controller class.</p>
+
+<p>But wait, there’s more!</p>
+
+<p>While perusing some code on my current project, I came across the [NonAction] attribute decorating a couple of controller actions. Re-reading that…I had NonAction decorating Actions. That has a certain “Jumbo-Shrimp” feel to it, doesn’t it? I suppose the non-action could fall under “managing the flow of the application” from above, but I’m thinking any non-actions might need to be refactored into the model.</p>
+
+<p>Moving forward on my MVC apps – of any flavor, Ruby or .Net – I think I’ll move to a much thinner controller model in favor of loading up the model with business logic. Though I thought I knew the pattern fairly well, I didn’t practice what I preached.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2009/08/31/i-forgot-what-the-m-in-mvc-was-for.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+</div>
+
+
+  <div id="pagination">
+    <ol>
+      
+      <li>
+        
+        <a href="/page5" title="Go to previous page">
+          &laquo; previous 
+        </a>
+        
+      </li>
+      
+
+      
+      <li>
+        
+          
+          <a href="/">1</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page2">2</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page3">3</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page4">4</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page5">5</a>
+          
+        
+      </li>
+      
+      <li>
+        
+        6
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page7">7</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page8">8</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page9">9</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page10">10</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page11">11</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page12">12</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page13">13</a>
+          
+        
+      </li>
+      
+
+      
+      <li>
+        <a href="/page7" title="Go to next page">
+          next &raquo; 
+        </a>
+      </li>
+      
+    </ol>
+    <div style="clear: both; height: 0px">.</div>
+  </div>
+
+
+<script type="text/javascript">
+  $(function(){
+    $(".post h2").hide();
+    $(".post .timestap").hide();
+  });
+</script>
+
+<script type="text/javascript">
+    var disqus_shortname = 'timwingfield';
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+
+          </div>
+        </div>
+      </div><!-- end content -->
+      
+      <div id="sidebar">
+        <ul>
+          <li>
+            <h2>Find me on...</h2>
+            <ul>
+              <li><a href="http://twitter.com/timwingfield">twitter</a></li>
+              <li><a href="http://timwingfield.tumblr.com">tumblr</a></li>
+              <li><a href="http://www.facebook.com/tim.wingfield">facebook</a></li>
+              <li><a href="http://www.linkedin.com/pub/tim-wingfield/8/89/213">linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>Categories</h2>
+            <ul>
+            
+              <li><a href="/categories/Codemash/index.html">Codemash</a></li>
+            
+              <li><a href="/categories/conference/index.html">conference</a></li>
+            
+              <li><a href="/categories/development/index.html">development</a></li>
+            
+              <li><a href="/categories/ajax/index.html">ajax</a></li>
+            
+              <li><a href="/categories/tech-fun/index.html">tech-fun</a></li>
+            
+              <li><a href="/categories/PragProg/index.html">PragProg</a></li>
+            
+              <li><a href="/categories/testing/index.html">testing</a></li>
+            
+              <li><a href="/categories/TDD/index.html">TDD</a></li>
+            
+              <li><a href="/categories/ASP.Net-MVC/index.html">ASP.Net-MVC</a></li>
+            
+              <li><a href="/categories/MVC/index.html">MVC</a></li>
+            
+              <li><a href="/categories/speaking/index.html">speaking</a></li>
+            
+              <li><a href="/categories/mobile/index.html">mobile</a></li>
+            
+              <li><a href="/categories/video/index.html">video</a></li>
+            
+              <li><a href="/categories/kanban/index.html">kanban</a></li>
+            
+              <li><a href="/categories/goals/index.html">goals</a></li>
+            
+              <li><a href="/categories/presentation/index.html">presentation</a></li>
+            
+              <li><a href="/categories/presenting/index.html">presenting</a></li>
+            
+              <li><a href="/categories/development-practices/index.html">development-practices</a></li>
+            
+              <li><a href="/categories/Rails/index.html">Rails</a></li>
+            
+              <li><a href="/categories/Ruby/index.html">Ruby</a></li>
+            
+              <li><a href="/categories/Mac/index.html">Mac</a></li>
+            
+              <li><a href="/categories/career/index.html">career</a></li>
+            
+              <li><a href="/categories/Windows/index.html">Windows</a></li>
+            
+              <li><a href="/categories/Lean/index.html">Lean</a></li>
+            
+              <li><a href="/categories/mongodb/index.html">mongodb</a></li>
+            
+              <li><a href="/categories/Cucumber/index.html">Cucumber</a></li>
+            
+              <li><a href="/categories/IronRuby/index.html">IronRuby</a></li>
+            
+              <li><a href="/categories/Albacore/index.html">Albacore</a></li>
+            
+              <li><a href="/categories/RSpec/index.html">RSpec</a></li>
+            
+              <li><a href="/categories/nUnit/index.html">nUnit</a></li>
+            
+              <li><a href="/categories/continuous-improvement/index.html">continuous-improvement</a></li>
+            
+              <li><a href="/categories/lean/index.html">lean</a></li>
+            
+              <li><a href="/categories/agile/index.html">agile</a></li>
+            
+              <li><a href="/categories/retrospectives/index.html">retrospectives</a></li>
+            
+              <li><a href="/categories/estimation/index.html">estimation</a></li>
+            
+              <li><a href="/categories/sizing/index.html">sizing</a></li>
+            
+              <li><a href="/categories/Jekyll/index.html">Jekyll</a></li>
+            
+              <li><a href="/categories/coaching/index.html">coaching</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end sidebar -->
+
+      <div style="clear: both;">&nbsp;</div>
+
+      <div id="footer">
+        <ul id="footer-menu">
+          <li class="first"><a href="/">Home</a></li>
+          <li><a href="/all.html">All Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+        <p>Copyright &copy;2011 timwingfield.com. All Rights Reserved.</p>
+      </div>
+    </div><!-- end page -->
+  </body>
+</html>

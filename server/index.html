@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Substantial   
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20100522
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Winging It</title>
+    <meta name="author" content="Tim Wingfield" />
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-23516986-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+        <ul>
+          <li><a href="/" class="first">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+      </div>
+      <div id="search"></div>
+    </div>
+    <div id="logo">
+      <h1><a href="/">Winging It</a></h1>
+      <p>
+        <img src="http://www.gravatar.com/avatar/1f178e90d4b441b3a1103254a5b3392a.jpg?s=50" />
+        <em>Here's what I got...</em>
+      </p>
+    </div>
+    <hr />
+    <div id="page">
+      <div id="content">
+        <div id="content-bgtop">
+          <div id="content-bgbtm">
+            <div id="home">
+  
+    <div>
+    
+    <div class="timestamp">Thursday, August 11, 2011</div>
+
+    <h2 class="index-link"><a href="/2011/08/11/coaching-in-india.html">Coaching In India</a></h2>
+    <div class="post">
+
+  <h2>Coaching in India</h2>
+
+<p>My client has an offshore team in Coimbatore, India and I recently spent three weeks there working with them. This group of people is about to become the other part of our development team on our current project. They are joining us, merging their code with ours, all working towards completing the project -- we need to become a team and getting the 8,000 mile wall out of the way was step one.</p>
+
+<h3>The People</h3>
+
+<p><img src="/images/posts/coimbatore_team.png" alt="The People" align="left" /></p>
+
+<p>There is no process, no technology, no framework that can lead your project to success without the right people. I had no expectations, good or bad, for this group prior to leaving. I had met the team lead as he had traveled to the US for a week, but I knew very little about the others. (<a href="http://toddkaufman.blogspot.com/2011/07/thank-you-coimbatore.html">Todd has a great post</a> summing up his thoughts from the trip. I highly recommend reading it.)</p>
+
+<p>What we soon discovered was this group was very excited to learn what we were doing. And not only what we were doing, but why we made the decisions we had made. We had already done four months of development so a lot of the groundwork was laid before they saw the code the first time. Unlike standard Ego Driven Developer who would take one look at the code and respond with, “This sucks, I can do this better,” these guys had already dropped that attitude (or never had it) and were ready to learn what was going into the project.</p>
+
+<h3>The First Few Days</h3>
+
+<p>The first 2 or 3 days were spent having conversations and finding where everyone was comfortable. Many conversations took place about application structure, domain knowledge, and general practices of the team. It as almost a mini two-day conference that was just focused around our application.</p>
+
+<p>Also in the first few days the team was very excited to show us the features they had completed prior to our arrival. The code looked fairly clean, but there were a few changes to be made, so they excused themselves to make the changes. Later we figured out why they wanted to leave the room: There had been a large amount of copy/paste development done, and they were still struggling to figure out what this copy/pasted code was doing.</p>
+
+<p>One thing to note here, they had created cucumber features, and those cucumber features were green. Before we think they had just copied, pasted, and said “We’re done!” they did have acceptance criteria, and they had put those acceptance criteria to work in the form of automated cucumber tests. So even though the code needed some refactoring, and it needed some better unit test coverage, if we would have had to ship the application the next day, their features were functional and developed to our agreed upon acceptance criteria.</p>
+
+<h3>The Task</h3>
+
+<p>With the initial conversations out of the way, the task at hand became much more clear. We had a team of talented problem solvers who thought well in C# and general patterns  who needed to be brought up to speed on the practices and tools of our team. Essentially we were down to 12 business days to teach TDD, give a clearer understanding of BDD, get them up to speed on mocking, and get them more comfortable with the ins and outs of git and github.</p>
+
+<p>If this was an infomercial, I believe this is where I would say, “What would you pay now?!?”</p>
+
+<p>Don’t answer yet!</p>
+
+<h3>The Tools</h3>
+
+<p>Step one was to get some in depth TDD going. The best tool here is the daily code Kata, so we started with the Roman Numeral Kata and Todd and I took a ping-pong pairing approach through the first day as a demonstration. (Ping-pong pairing: one of wrote a test, the other made it pass then wrote the next test. Wash. Rinse. Repeat.) The next day, they did the ping-pong approach through the same problem. Everyday for the rest of our time the team paired on a Kata, switching pairs daily, with step one being to create a new dev branch in their local git repository. (We were using <a href="https://github.com/PillarTechnology/dot-net-kata">this empty C# project</a> for our katas every day.)</p>
+
+<p>The Katas did a good job laying the groundwork for doing TDD on the features that the team was going to work on while we were there. We did a lot of team coding with the projector so we could collectively work our way through the features. As coaches we were guiding rather than ordering which allowed the team to make and correct mistakes.</p>
+
+<p>The second exercise we used almost daily was plenty of refactoring. Todd found a sample of some horrid code online that he converted to C# to use as an <a href="https://github.com/PillarTechnology/RefactoringExercise">example for practice</a>. Todd lead the exercise using some simple refactoring rules such as watching out for duplication, nested if statements, large methods, and multiple parameter methods.</p>
+
+<p>After the introductory refactoring exercise we opened up the features the team had already written and started refactoring. Following the simple refactoring rules Todd had used previously the team went about refactoring their own code. In the first session one of the guys on the team got to delete about 40 lines of code and insert 2, and there were smiles all around the team room as he was doing it. One of the tallest hurdles as a developer is deleting code you have crafted, but this team was deleting it and enjoying it.</p>
+
+<p>By the time we left the team had refactored all four of the features they had been assigned. Most of the refactoring was done as a group, with a different person at the keyboard each day, to help teach what it means to refactor code. Our last week there the team had taken the initiative on refactoring and I returned from lunch one day with a request to do a code review of their most recent refactoring work. Once again, lots of smiles in the room.</p>
+
+<h3>The Results</h3>
+
+<p>I was surprised how much we got taught in such a short amount of time. By leveraging as many exercises as we could, and doing as much hands on as possible, the team picked up the basics of TDD, BDD, and refactoring. We left a wiki full of cheat sheets (or “bits” as such documents are known to our Indian friends) as reminders for all the exercises we had done, and for some other concepts such as our git workflow and some nHibernate tips.</p>
+
+<p>However, without a group willing to learn and do the work of learning we would have never gotten so far. So a huge credit needs to go to the team for the work they put in to the crash course we were teaching.</p>
+
+<p>Will they stick with it hard core? I doubt it, most teams will revert to “what they know” when the heat gets turned up. But I think this group will be pretty easy to influence back to their new practices...even from 8000 miles away.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2011/08/11/coaching-in-india.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Thursday, June 16, 2011</div>
+
+    <h2 class="index-link"><a href="/2011/06/16/estimation-rant-part-two.html">Estimation Rant Part Two</a></h2>
+    <div class="post">
+
+  <h2>Estimation Rant Part Two</h2>
+
+<p>The <a href="/2011/05/12/estimation-rant.html">Estimation Rant</a> opened the can of worms on estimation. This topic is always a good one on software teams and is sure to drive opinions and discussions around those opinions. Some of those opinions were surfacing in the comments of that post when Blogger decided to flake out. A whole conversation disappearing for a few days is a sure fire way to end said conversation. So why not pick it back up here.</p>
+
+<p>I have estimated and sized work for both the purpose of sales and  for delivery - they are different exercises. The conversations take place with a different group of people, and the level of detail needed between a sales estimate and a delivery estimate are much different. A sales estimate should not be concerned with scope. Your client has a business problem that needs solved <strong>AND</strong> they need your help in solving it. Scope at a story point level - or worse, at an hours level - in a sales meeting is doing a disservice to the client and to the delivery team.</p>
+
+<p>I’m sure a few people are chomping at the bit at that one, that sales shouldn’t be concerned with the scope of a project. That is until you realize the scope of a project will change. Repeat: The scope of a project <strong>WILL</strong> change. The delivery team is going to tear into the project and they’re going to learn more and more about it. They are going to learn that some concepts are smaller than they initially thought, just as they will learn that some concepts will be more complex than they thought. The scope is definitely going to change, and it will change constantly. When is the last time you built the project you started? Change happens all the time. <a href="http://twitter.com/#!/aJimHolmes/status/80576009975496704">Embrace or get ulcers.</a> (That awesome one-liner courtesy of <a href="http://twitter.com/#!/jaredrichardson">Jared Richardson</a>.)</p>
+
+<p>We have a number of tools available to us as agilists that should also help drive the sales process. The concept of a <a href="http://www.upstarthq.com/2010/04/introduction-to-minimum-marketable-features-mmf/">minimal marketable feature</a> (or minimal viable product or minimal value feature, pick your phrase) which is the minimal amount of work that needs to be done to deliver value to your customer. Or the <a href="http://napkin.highgroove.com/articles/2011/01/20/a-day-in-the-life-of-agile-hands-on-workshop">value story</a>, where the business decides the value of a story in dollars prior to making it a project, then prioritizes the work to satisfy the value story. Both those concepts are going to support an iterative development process.</p>
+
+<h3>Building Software</h3>
+
+<p>A couple of comments to the prior estimation rant brought up finishing a basement. This steps into one of my biggest pet peeves about our industry: We build software, we’re not basement finishers. We don’t build houses. We don’t build bridges. We don’t build skyscrapers. We create software. Software is soft, it is mutable, and built correctly it can be changed at a low cost. The SOLID principles are solid as an acronym only because each and every principle is concerned with lowering the cost of change. They are about <strong>KEEPING</strong> software soft. The practice of building software is a knowledge creating process. It’s not a repetition of the same process with the same materials on a different job site.</p>
+
+<p>In the context of my estimation rant, the number of unknowns in building a software application compared to the unknowns in framing out a basement wall are what leads to the waste of estimations. Take a small feature and develop it. Don’t estimate it, code it. At the end of that feature you’ll have learned more about the system, you’ll have created some value by delivering the feature, and you’ll have an actual time it took to build the feature.</p>
+
+<p>The size of the East River didn’t change while they were building the Brooklyn Bridge. The size and shape of my basement didn’t change as we finished it. But the scope and size of my project changed <strong>TODAY</strong> as we found a better way to display data to our users. And it will likely change again tomorrow.</p>
+
+<h3>Are we agile or not?</h3>
+
+<p>The traditional way to start bidding was with,  “I have this idea and this much money; I want it done by Tuesday? Can you do that?” Teams would clamor for the business, put a bid in to win the project, get the business, then spend weeks in a detailed contract negotiation detailing what the deliverables would be. When development started and the actual scope got out of hand, they would change control the hell out of it to keep it profitable.</p>
+
+<p>But if we move to an agile bidding process, we can start the conversation with, “I have this idea and this much money, how much of my idea can I get?” Then we can prioritize some features, possibly very large features, and get to work on it. Line three of the <a href="http://agilemanifesto.org/">agile manifesto</a>: Customer collaboration over contract negotiation. Which is not to say we don’t enter into a contract, we most certainly will. However the conversation in determining what can be delivered to satisfy the customer's business need should lead to that contract, not be hindered by the contract. Your contract is there to protect both parties, but it should not be written down to the detail level that allows one or both parties to hide behind it in order to “win” the engagement.</p>
+
+<p>Obviously trust is going to be a big factor here, as you just can’t say, “We’ll do it all agile like! Trust me!” Trust will need to be built, and the easiest way to build it is to be open and honest with all your communication. Be professional. Start small and build it from there. If there is no trust between you and your client there is no contract out there that will force it to happen.</p>
+
+<p>A friend and colleague was working on a project recently where they are doing that incremental trust building, introducing agile, and having their ups and downs. In one case they proposed an approach to solving one of the client’s problems, and client replied with: <em>“Your competitors have proposed a solution, and they already know and have priced out what they will need to build, whereas you just proposed an approach.”</em></p>
+
+<p>That is a pretty straightforward response, and one that fits directly into traditional project bidding. So my friend’s reply was definitely not traditional: <em>“Nobody knows exactly what you need built; not you, not them, not us. The difference here isn’t that they have a solution, it’s that we are not lying to you to try to win your business.”</em> Open and honest communication.</p>
+
+<h3>Last Word on Estimation</h3>
+
+<p>I was in attendance at Agile Dev Practices West recently and got to see <a href="http://lindarising.org/">Linda Rising’s</a> <a href="http://www.sqe.com/AgileDevPracticesWest/Keynotes/Default.aspx#tk1">keynote address “Deceptions and Estimating: How We Fool Ourselves.”</a> Linda had many studies and examples of how we as humans are overly optimistic at most things in life: How we drive, what we eat, and how we estimate software. We have learned that we are so bad at estimating software that we will spend extra time on the estimation in order to get it as accurate as possible, only to fail at it again.</p>
+
+<p>Why do we keep spending money on an estimation that is wrong? Sometimes wildly wrong? Doesn’t it make more sense to spend money on building it?</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2011/06/16/estimation-rant-part-two.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Tuesday, June  7, 2011</div>
+
+    <h2 class="index-link"><a href="/2011/06/07/moving-the-blog.html">Moving The Blog</a></h2>
+    <div class="post">
+
+  <h2>Moving The Blog</h2>
+
+<p>With the <a href="/2011/05/12/estimation-rant.html">Estimation Rant</a> quickly becoming my most popular blog post and generating a good discussion in the comments, Blogger decided that was the day to start doing random deletions of comments and later posts. I have been leaning towards moving off the Blogger platform for a while, but being lazy and it mostly working, I didn’t move anything around. Since “mostly working” went out the window, it was time to move the blog.</p>
+
+<p>But where to? I’ve always wanted to have a bit more control over where my content lived. I used the FTP upload option on blogger which kept the content on my own hosted server, but they discontinued that a couple years ago. I thought about moving to an installed WordPress blog, but that whole lazy thing kept me from pursuing that one too far. What about the blog hosted on WordPress? Why leave Blogger if that’s the choice.</p>
+
+<p>Then I stumbled upon <a href="https://github.com/mojombo/jekyll">Jekyll</a>. Followed a <a href="https://github.com/mojombo/mojombo.github.com">few links</a> to some other <a href="https://github.com/joefiorini/userobsessed">Jekyll sites</a> then to how <a href="http://pages.github.com/">github pages</a> works and made my decision. My content lives on github rather than in some database somewhere, and it exists as plain html files. The power and storage of github behind a blog being served up as plain HTML files? Awesome! Publishing by typing <code>git push origin master</code>? Geek points out the wazoo!</p>
+
+<h3>Setting Up The Jekyll Site</h3>
+
+<p>Step 1 was to toy around with Jekyll some and see what was involved. Essentially do a quick spike of Jekyll and see if it was going to work. About an 3 hours into my spike, I had an html template in place, four of five test blog posts, and an about page. Decision solidified. I laid out the steps between where I was and where I wanted to be to get it launched and went to work. If you're the kind that flips to the back of the book to see how it ends, it took me roughly two weekends to complete the move and get it published.</p>
+
+<p>The first hurdle I ran into was running Jekyll plugins on github. I had added a plugin to generate category links for me based on the categories in my blog posts. Pretty straightforward, but not handled by base Jekyll functionality. Everything worked fine locally, push to github and no categories. Looked around some, find the right page of the manual to complete my RTFM, and found that github doesn't run any code in the _plugins directory as it is untrusted code. Seemed a good enough reason to me, and the fix was pretty simple. Generate the site locally, add the categories directory that gets generated to the root directory of the project, then <code>git push origin master</code> and the categories are there. <em>(I’m not sure this is the best solution, but it is a solution.)</em></p>
+
+<h3>Migrating From Blogger</h3>
+
+<p>This was the real PITA for the whole move. There were a couple suggestions on how to automate the move, but I had no luck with either of them. In the end I settled on doing it all by hand, which really wasn't that hard. Copying from the blogger dashboard into markdown required very few edits. If I was moving more than the 60 or so posts I had, I would have probably found a way to script an import or something. I figured I could copy/paste my way through it quicker than scripting it out, so brute force won the day.</p>
+
+<p>The smallish edits I had to make were what you would expect. Recreate some formatting - bold, italics, headings, etc - add the images back in, and add the links back to the posts. My earlier blog posts were easy as I was really lazy back then with few headings, links, and images. My more recent ones where I have decided to add a few more pieces of flair took a little longer to recreate in copy/paste mode.</p>
+
+<p>That said, if I had it to do over, I would probably brute force it again. If I had closer to 100 posts to migrate, I would probably opt for creating some kind of migration script.</p>
+
+<h3>Migrating the Comments</h3>
+
+<p>The few comments I had on the blog I didn't really want to lose. What seemed to be the obvious choice here was to migrate to Disqus. They are everywhere, manage threads, help keep down spam, and hit right at my price point of free. The migration was a little trial and error for me, though.</p>
+
+<p>My first try was to just import them from Blogger. Disqus has an automated way to do that, it took all of 4 minutes to complete the process. However, I had no good way to link my newly imported comments back to they’re original blog posts. Disqus will relate comments to posts in one of two ways, a unique identifier you provide them or the blog post url. I had no way to give them a unique identifier, and the url for each post was about to change.</p>
+
+<p>After a little more research, I found that Disqus provides some tools for more complex blog migrations to keep your posts and comments linked up. (I'm telling you, the people at Disqus have thought of EVERYTHING!) So I redid the import to blogger, but instead of just importing the comments I installed Disqus as the commenting system on the existing blog. Then I had to do a quick CSV file to map the old url to the new url and upload that to Disqus. About an hour later, the comments appeared on the new blog. (The new blog was still not "live." It was running on local host and at timwingfield.github.com, but the comments were there.)</p>
+
+<h3>Still On the Todo List</h3>
+
+<p>Sunday I "pushed the button" and swapped the DNS around to point at github rather than at blogger, and about an hour after that switch the DNS had refreshed to the point that I was seeing the new blog. But now that I have the level of control over my blog that most geeks like to have, I’ve got plenty on the todo list.</p>
+
+<p>I still want to add some more features to the index page, starting with getting a comment count and link under each post to go directly to the post. I would also like to revisit that publishing the categories thing from above. Initial thoughts are I will end up with some little rake script or something to handle it, but may do some more looking. A dedicated mobile interface would be nice. Jekyll has the ability to publish at a given time, so I will need to spike that one out to see what I need to do.</p>
+
+<p>One week into this little experiment and I am liking it. I feel like I'm more in control of my content, I have a better comment system than before, and publishing is git push. Big fun!</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2011/06/07/moving-the-blog.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Thursday, May 12, 2011</div>
+
+    <h2 class="index-link"><a href="/2011/05/12/estimation-rant.html">Estimation Rant</a></h2>
+    <div class="post">
+
+  <h2>Estimation Rant</h2>
+
+<p><img src="/images/posts/estimation_rant.png" alt="I feel an estimation rant coming on" align="right" />
+Estimation is a bad word on dev teams. We have learned from many painful estimation debacles to the point we cringe when we hear the word, "Estimate." In many software endeavors estimating is a necessary practice, at least on some levels, to get the thumbs up to start writing software in the first place. But just because we have done estimating activities often, does not mean we are good at it.</p>
+
+<p><em>Disclaimer: I am discussing estimation in the context of delivery, not sales. Clients everywhere want to know when something will be done before they commit money to it, which is why many talented sales people drive fancy cars.</em></p>
+
+<h3>Failing Into the Hours Trap</h3>
+
+<p>The very first failure of many estimating exercises is estimating your tasks, stories, and features in hours - or days or weeks or years. Any unit of time measurement is likely going to get you in trouble, but we will stick with hours for our example. Yes, hours fit neatly into a column in Microsoft project, but for estimating a development effort your setting yourself up for failure as soon as you choose hours as your unit of measure.</p>
+
+<p><img src="/images/posts/dages_estimation.jpg" alt="Ready! Aim! Estimate!" align="left" /></p>
+
+<p>The first trap in using hours is we are all going to base that guesstimate on the 8 hour work day. If you commit to 8 hours, you are essentially saying that you will have that feature done in a day. Your manager is definitely hearing "one day" when you say 8 hours. If you could sit and code for 8 hours straight, maybe that estimate would be worthwhile. But how often do you get to code 8 straight hours? All kinds of things happen that derail that 8 hour day of uninterrupted coding. The stand up, other meetings, lunch, nature will inevitably call, and there's a better than average chance a Nerf war will break out in many team rooms.</p>
+
+<p>The second trap of hours is they really only get used as a measurement when you go over your estimate. For example...</p>
+
+<p>Let's take a developer on our team, we'll call him Jeff. In our estimation meeting, the team has determined that feature #1337 will take 16 hours to complete. Based on our previous trap we all just heard, "Two days." Jeff pulls feature #1337 off the board Monday morning and gets to work. Wednesday afternoon, he moves it to dev complete. Whoa, that feature just took 24 hours to complete! Come on, Jeff, you're 8 hours over the estimate? How will we ever make that time up?? We're on a deadline here!!</p>
+
+<p>Sorry...all accusations are purely hypothetical.</p>
+
+<p>The next Monday morning we're back at work, and our trusty developer Jeff looks on the board and sees feature #1355 on the board estimated at 16 hours. He pulls the card into the development queue and gets to work on it. At the end of the day he's done. 8 hours into his 16 hour feature he moves it to dev complete. Way to go Jeff!! You rock! Best developer ever!!</p>
+
+<p>But hold on a second. Our rock star dev has missed his estimate by 50% in both cases. In one he's the villain and the other the hero? He goofed by 50% but thanks to "beating the hours" on the second feature that gets lost. In reality we should be asking Jeff why he missed each estimate. That will help us learn where we as a team missed and how we can apply that to future guesstimation exercises.</p>
+
+<h3>The Cost of Estimation</h3>
+
+<p>During a lunch conversation at a past conference I listened to a gentleman tell us how he was contracted to do a 6 month estimation on what it would cost to build a certain piece of software. Two weeks into the contract, one that was paying him quite well, he went to his stakeholders and said, "The amount of money you are sinking into the estimation contract will never be returned to you. You will never get $1 back from it, how about I just start building the software and we'll see where we are in 5 and a half months?" They went for it, and he won the development contract 5 and a half months later.</p>
+
+<p>The estimate means nothing to the actual delivery of the software. One of my former managers used to say, "The effort is the effort is the effort." The iron triangle of software is scope, timeline, and quality. We're allowed to fix any two of them, but the third has to be flexible. (It's scary how many times quality is the one that gets forced to flex.) Our estimate won't change any of the three points on the iron triangle.</p>
+
+<h3>All Is Not Lost</h3>
+
+<p>Fear not, there are ways to get your software written without falling into estimation traps, and giving those outside the team a reasonable idea of when something will be delivered.</p>
+
+<p>First up is story points. Story points are a representation of the <a href="http://blog.mountaingoatsoftware.com/its-effort-not-complexity">level of effort</a> the team thinks it will take to complete a story. Story points can be anything. I have seen teams use numbers such as 1, 3, 5, and 8 as their points, and other teams will use t-shirt sizes such as S, M, L as points. One team I saw <strong>REALLY</strong> wanted to drive home the fact that story points are relative, so they went with duck, unicorn, and elephant as their sizes. Using any of those units of measurement illustrates that story points are used relative to each other rather than to a fixed value such as hours. Humans are very good at doing comparisons, so we don't know exactly how big a unicorn story is, but we know an elephant story is bigger.</p>
+
+<p>Another way to step away from estimations is to move to a continuous flow system. Get yourself a Kanban board, get rid of iterations and iteration commitments, and start tracking the cycle time on the completed side of things. There are a few challenges with going this way, the first being that you will not have a reasonable idea of your cycle time until you have pulled a few stories through the system. Additionally sizing may still come into play because stories have this habit of never being exactly the same size. But, get through a few cycles, get some actual times on features from concept to completion, and you'll be handing your managers actual times from which they can plan future work. It may take a little time to get the data, but there isn't a manager in an IT department anywhere that wouldn't love to hear, "This story is sized as a small for our team and small features take us about 2 days to complete. Come back Wednesday, we should have it for you."</p>
+
+<p>The last way to get rid of estimation is just to get rid of estimation. Like the story where the gentleman stopped researching on the estimation contract and just started writing code, just write the freakin' code! That could make for some difficult conversations at some point, but if your 4 person dev team is in a 2 hour estimation meeting every iteration, that's 8 hours you could have spent writing code towards a deliverable.</p>
+
+<pre><code>&lt;/rant&gt;
+</code></pre>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2011/05/12/estimation-rant.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+    <div>
+    
+    <div class="timestamp">Thursday, April 21, 2011</div>
+
+    <h2 class="index-link"><a href="/2011/04/21/how-we-do-a-retrospective.html">How We Do a Retrospective</a></h2>
+    <div class="post">
+
+  <h2>How We Do a Retrospective</h2>
+
+<p><img src="/images/posts/hard_hats_required.jpg" align="left" alt="Hard hats required" />
+There is no one right way to do a retrospective, there are many good techniques...and a few bad ones. Utilizing more than one technique is a good way to get different conversations going with your team, and expose different areas that could use a little fixin'. That said, I do have a "tried and true" technique that we've used on a number of teams over the years. It's usually pretty good at getting the conversation going, and can be done in 30 minutes or less to keep you from being stuck in "yet another meeting."</p>
+
+<p>First things first, at the start of any retrospective you should review the action items or results from the previous iteration's retrospective. Have the people assigned to each item report how it went and what got accomplished. Nothing gets a retro off to a good start like saying, "Remember that problem we had last week? It's fixed!"</p>
+
+<h3>A Few Supplies and a Little Preparation</h3>
+
+<p>We're going to need:</p>
+
+<ol>
+<li>Three colors of sticky notes. Regular square ones will work fine. For this example we're going to use purple, yellow, and green.</li>
+<li>A box of pens, preferably all the same kind. I like to use sharpies because big pens on small paper ensures we get short items on each card rather than essays. Using the same pen also keeps things a little more anonymous.</li>
+<li>A whiteboard. In the absence of a whiteboard the big easel sheets would do the trick.</li>
+<li>A timer of some kind. I picked a timer up for about $200...it also makes phone calls, surfs the web, plays Angry Birds and sends text messages and email. It's high end for a timer, but it does the trick.</li>
+</ol>
+
+
+<p>For the prep work, take our three colors of sticky notes and split them up so each member of the team has a few of each color. The number really doesn't matter, but we usually end up with 6 to 8 of each color for each person. Give each member of the team their own little pile of sticky notes and a sharpie.</p>
+
+<h3>Gather The Data</h3>
+
+<p>The colors signify good, bad, and confusing items from the previous iteration. Since we went with purple, yellow, and green we'll say that purple = pain, yellow = confusing, and green = good. Set the timer for 5 minutes and have the team write as many items as they can think of for each color from the previous iteration. They should do this on their own, writing their own thoughts down, we'll collaborate and discuss later. If your team is smaller and iterations are pretty short, put less than 5 minutes on the clock.</p>
+
+<p>When the time is up, have each team member walk to the white board and stick their notes on the board. No order to them, just get them on the wall. Once all the stickies are on the wall, take a couple of volunteers to group them by subject, not by color. We're not looking for all the bad things that happened in one cluster, we're after what was good and bad about a given subject to the team. Aim for 4 to 8 categories, and try not to get them too broad. Once you have your categories, circle them and put a one or two word title above the cluster. It should look something like this...</p>
+
+<p><img src="/images/posts/retro_board.jpg" alt="retrospective board" /></p>
+
+<h3>Discuss</h3>
+
+<p>We've got things broken down, next up we have to decide what we're going to tackle. Best way to do this is to Dot Vote. Dot voting is an old stand by in agile. Each team member gets 2 or 3 votes and they place a dot next to the category they want to discuss. If they think a category is very important they could put all three of their dots next to that category. We do want each team member to use their votes though, abstaining isn't allowed.</p>
+
+<p>When everybody has voted we'll discuss the top two vote getters and try to pull an action item or two out of each category. Do a quick run through of each sticky, set the timer at 10 to 15 minutes, and get to discussing. Try to involve everybody in the discussion as well. Since everybody contributed to the stickies on the wall it should be easy to get the quieter folks to speak up as they likely added a note to the category.</p>
+
+<h3>What Are the Goals Here?</h3>
+
+<p>Goal numero uno in this set up is to get everybody to put stickies on the wall with what they thought went good or bad or confused them during the last iteration. By doing this we have everybody involved in the retrospective right away, and increases the likelihood of them speaking up during the discussion.</p>
+
+<p>The second thing we're after is discussing categories of issues rather than smaller issues raised by one person. The goal of any retrospective is to look back and see what we can do to make the whole team better, not just what the loudest, type A personality, Alpha-Dev wants fixed to make his life better. By categorizing everybody's issues we can compare what everybody thinks, discuss the broader issue, and derive a good actionable, assignable action item from that.</p>
+
+<h3>Some Issues: Learn From My Mistakes</h3>
+
+<p>Doing this, or any, retrospective style 6 or 8 or 10 retrospectives in a row will stop yielding good results. That happened with one of my teams and we kind of got in a rut. Once in that rut the retrospective became an "Airing of Grievances" (minus the festivus pole) and we weren't getting good action items. In reality, we were getting bad attitudes towards the retrospective and incremental change was not coming our way.</p>
+
+<p>One particular retrospective we had done the categorizing and completed our voting and a sticky note from one member of the team had not made it into a category we were going to discuss. In order to get it discussed, the owner of the sticky moved it into a category we were going to talk about. It was posed to the team if we should leave it, and the consensus was it wasn't there for the voting, it shouldn't go in now. The offender wasn't too happy with this decision and slapped it back in to be discussed...at which time one of us removed it, tore it up, and threw it away. Team over individual in the retro. Always.</p>
+
+<p>As noted earlier, and solidified with my first issue above, this isn't the only way to do a retrospective and it shouldn't be used iteration after iteration. However, it does get the conversation going and it will usually yield an item or two that your team wants out of its way. Give it a shot the next time you have a retrospective.</p>
+
+  <div class="disqus-link"><a href="http://blog.timwingfield.com/2011/04/21/how-we-do-a-retrospective.html#disqus-thread">Comments >></a></div>
+
+</div>
+
+    </div>
+  
+</div>
+
+
+  <div id="pagination">
+    <ol>
+      
+
+      
+      <li>
+        
+        1
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page2">2</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page3">3</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page4">4</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page5">5</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page6">6</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page7">7</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page8">8</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page9">9</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page10">10</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page11">11</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page12">12</a>
+          
+        
+      </li>
+      
+      <li>
+        
+          
+          <a href="/page13">13</a>
+          
+        
+      </li>
+      
+
+      
+      <li>
+        <a href="/page2" title="Go to next page">
+          next &raquo; 
+        </a>
+      </li>
+      
+    </ol>
+    <div style="clear: both; height: 0px">.</div>
+  </div>
+
+
+<script type="text/javascript">
+  $(function(){
+    $(".post h2").hide();
+    $(".post .timestap").hide();
+  });
+</script>
+
+<script type="text/javascript">
+    var disqus_shortname = 'timwingfield';
+
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+
+
+          </div>
+        </div>
+      </div><!-- end content -->
+      
+      <div id="sidebar">
+        <ul>
+          <li>
+            <h2>Find me on...</h2>
+            <ul>
+              <li><a href="http://twitter.com/timwingfield">twitter</a></li>
+              <li><a href="http://timwingfield.tumblr.com">tumblr</a></li>
+              <li><a href="http://www.facebook.com/tim.wingfield">facebook</a></li>
+              <li><a href="http://www.linkedin.com/pub/tim-wingfield/8/89/213">linkedin</a></li>
+            </ul>
+          </li>
+          <li>
+            <h2>Categories</h2>
+            <ul>
+            
+              <li><a href="/categories/Codemash/index.html">Codemash</a></li>
+            
+              <li><a href="/categories/conference/index.html">conference</a></li>
+            
+              <li><a href="/categories/development/index.html">development</a></li>
+            
+              <li><a href="/categories/ajax/index.html">ajax</a></li>
+            
+              <li><a href="/categories/tech-fun/index.html">tech-fun</a></li>
+            
+              <li><a href="/categories/PragProg/index.html">PragProg</a></li>
+            
+              <li><a href="/categories/testing/index.html">testing</a></li>
+            
+              <li><a href="/categories/TDD/index.html">TDD</a></li>
+            
+              <li><a href="/categories/ASP.Net-MVC/index.html">ASP.Net-MVC</a></li>
+            
+              <li><a href="/categories/MVC/index.html">MVC</a></li>
+            
+              <li><a href="/categories/speaking/index.html">speaking</a></li>
+            
+              <li><a href="/categories/mobile/index.html">mobile</a></li>
+            
+              <li><a href="/categories/video/index.html">video</a></li>
+            
+              <li><a href="/categories/kanban/index.html">kanban</a></li>
+            
+              <li><a href="/categories/goals/index.html">goals</a></li>
+            
+              <li><a href="/categories/presentation/index.html">presentation</a></li>
+            
+              <li><a href="/categories/presenting/index.html">presenting</a></li>
+            
+              <li><a href="/categories/development-practices/index.html">development-practices</a></li>
+            
+              <li><a href="/categories/Rails/index.html">Rails</a></li>
+            
+              <li><a href="/categories/Ruby/index.html">Ruby</a></li>
+            
+              <li><a href="/categories/Mac/index.html">Mac</a></li>
+            
+              <li><a href="/categories/career/index.html">career</a></li>
+            
+              <li><a href="/categories/Windows/index.html">Windows</a></li>
+            
+              <li><a href="/categories/Lean/index.html">Lean</a></li>
+            
+              <li><a href="/categories/mongodb/index.html">mongodb</a></li>
+            
+              <li><a href="/categories/Cucumber/index.html">Cucumber</a></li>
+            
+              <li><a href="/categories/IronRuby/index.html">IronRuby</a></li>
+            
+              <li><a href="/categories/Albacore/index.html">Albacore</a></li>
+            
+              <li><a href="/categories/RSpec/index.html">RSpec</a></li>
+            
+              <li><a href="/categories/nUnit/index.html">nUnit</a></li>
+            
+              <li><a href="/categories/continuous-improvement/index.html">continuous-improvement</a></li>
+            
+              <li><a href="/categories/lean/index.html">lean</a></li>
+            
+              <li><a href="/categories/agile/index.html">agile</a></li>
+            
+              <li><a href="/categories/retrospectives/index.html">retrospectives</a></li>
+            
+              <li><a href="/categories/estimation/index.html">estimation</a></li>
+            
+              <li><a href="/categories/sizing/index.html">sizing</a></li>
+            
+              <li><a href="/categories/Jekyll/index.html">Jekyll</a></li>
+            
+              <li><a href="/categories/coaching/index.html">coaching</a></li>
+            
+            </ul>
+          </li>
+        </ul>
+      </div><!-- end sidebar -->
+
+      <div style="clear: both;">&nbsp;</div>
+
+      <div id="footer">
+        <ul id="footer-menu">
+          <li class="first"><a href="/">Home</a></li>
+          <li><a href="/all.html">All Posts</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>   
+        <p>Copyright &copy;2011 timwingfield.com. All Rights Reserved.</p>
+      </div>
+    </div><!-- end page -->
+  </body>
+</html>
