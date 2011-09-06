@@ -18,11 +18,17 @@ That one fired me up. I did not dive in the middle of the conversation red faced
 
 The first issue here is we have no proof that a deadline forces a team to deliver anything. It might give the illusion that the team beats a deadline, but under the covers somewhere there is an issue. Think back before the salad days of agile when were waterfalling ourselves against massive deadlines, ever move a deadline?
 
-I was on a team doing two week iterations and the second Friday was the end of our iteration. On normal days, the team room was emptying out by 4:30 every afternoon, by 5:30 there might be one or two people there. On every other Thursday, it was full until 6:30 or 7 with the last person leaving closer to 9. Why? They had a deadline to beat. Did they get their work in? Usually, yes, but they were hiding the real problem. They were beating their deadline, but they were working hidden OT to do it, taking time away from home, and hiding the real issue from their PO.
+I was on a team doing two week iterations and the second Friday was the end of our
+iteration. On normal days the team room was emptying out by 4:30 every afternoon, by
+5:30 there might be one or two people there. But on every other Thursday it was full until
+6:30 or 7 with the last person leaving closer to 9. Why? They had a deadline to beat.
+Did they get their work in? Usually, yes, but they were hiding the real problem. They
+were beating their deadline, but they were working hidden OT to do it, taking time away
+from home, and hiding the real issue from their Product Owner.
 
 I am sure a few people are thinking, "Hey, Tim, they got their work done! Every iteration! They were heros to company!" Those of you thinking that, I say for shame. OK, I do not say for shame, but I do say that they stretched their time box in an effort to appear successful.
 
-An iteration at its core is a time box. It is a fixed amount of time in which we will try to get as much high quality, well tested work done as we can. As a team, this group had agreed to do two week iterations with an iteration day for retrospective and planning. They had agreed to do 72 hours of development and test, and every other Thursday they were stretching that to 75 or 80 hours. So maybe they did get the work done, but they had broken their agreement - with their Product Owner, and worse, with themselves - to get that work done.
+An iteration at its core is a time box. It is a fixed amount of time in which we will try to get as much high quality, well tested work done as we can. As a team, this group had agreed to do two week iterations with an iteration day for retrospective and planning. They had agreed to do 72 hours of development and testing, and every other Thursday they were stretching that to 75 or 80 hours. So maybe they did get the work done, but they had broken their agreement - with their Product Owner, and worse, with themselves - to get that work done.
 
 We have all heard of the iron triangle of software development, there are three points of the triangle of time, scope, and quality and only two of those points can be fixed.  We like to operate on quality as a fixed point, so pick time or scope and make it variable. An iteration says time is fixed, but all too often it becomes variable because of fixed scope by the end of the iteration.
 
@@ -76,4 +82,6 @@ Agile is about continuously learning, no matter what process you are using. You 
 be learning more about your team, your product, and your problems every iteration. Every
 day.
 
-Agile Manifesto line four: _"We value responding to change over following a plan."_ Iteration deadline: plan or time box?
+[Agile Manifesto](http://agilemanifesto.org/) line four: _"We value responding to change over following a plan."_ 
+
+Iteration deadline: plan or time box?
