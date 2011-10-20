@@ -7,7 +7,8 @@ categories: career
 ##Going Independent
 
 I have made a few career moves over the last 24 months, but I have finally gotten to the
-point where I can go off on my own. October 28th will be my last day as a full time employee with Pillar.
+point where I can go off on my own. I guess more correctly, I finally got the courage to
+pull the trigger on going independent. So October 28th will be my last day as a full time employee with Pillar.
 
 I am looking at doing more agile coaching and training as I move forward, but banging out some code will never be far away. Making this move should free up some time to explore some other opportunities that have presented themselves, and opportunities that have as yet come knocking.
 
