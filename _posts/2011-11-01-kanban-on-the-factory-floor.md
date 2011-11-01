@@ -35,7 +35,7 @@ other supplies nearby in a storage area. The factory is run pretty lean, but the
 need a supply of welding materials, nuts, and bolts. 
 
 The steel begins its journey north through the building by first being cut and shaped.
-It makes a stop at a plasma cutter, then some of it will move into a huge hydraulic press to be bent into the correct shape. From there it moves into the welding booth where two robotic welders make the standard welds. Any custom welding will be done by hand at the next station. Following welding, the product is essentially put together and the finishing touches start by going through a cleaning process then into the paint booth. Once it is painted the only thing left to do is get it loaded on a truck to get shipped to the customer.
+It makes a stop at a plasma cutter, then some of it will move into a huge hydraulic press to be bent into the correct shape. From there it moves into the welding booth where robotic welders make the standard welds. Any custom welding will be done by hand at the next station. Following welding, the product is essentially put together and the finishing touches start by going through a cleaning process then into the paint booth. Once it is painted the only thing left to do is get it loaded on a truck to get shipped to the customer.
 
 That is a pretty abbreviated version of the process. But from a Kanban standpoint once
 the table under the welding robots is available, a sheet of steel slides in there. Same
@@ -65,7 +65,7 @@ development or testing, it is just a post-it note...put it in there! Stick it on
 that lesser post-it note if you need the capacity.
 
 Let's take a look at that same situation in our factory. We have a new order that just
-came it, and it is an urgent one. Yeah, I know we already have 8 tons of steel being
+came in, and it is an urgent one. Yeah, I know we already have 8 tons of steel being
 welded by the robots, go ahead and put another 8 tons of steel on top of that and
 get it done first.
 
