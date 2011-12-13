@@ -1,1 +1,1 @@
-rvm jekyll
+rvm gemset use jekyll
