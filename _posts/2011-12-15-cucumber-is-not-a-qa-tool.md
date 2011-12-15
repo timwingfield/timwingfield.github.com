@@ -26,7 +26,8 @@ place it will free up some QA departments from doing repetitive manual tests and
 them to focus on more exploratory testing. 
 
 However, if you consider Cucumber to be only a QA tool, you are missing a good portion
-of what this and other ATDD/BDD frameworks, can provide.
+of what this and other Acceptance Test Driven Development (ATDD) or Behavior Driven
+Development (BDD) frameworks can provide.
 
 ###Collaboration
 
@@ -45,5 +46,54 @@ dev team that says:
 
 No more reams of documentation around a simple feature with wireframes, UML diagrams,
 feature documents, and other items buried in a wiki somewhere that gets ignored. Plain
-text is easy, and in my experience the easier something is to use, the better you chance
+text is easy, and in my experience the easier something is to use, the better chance
 you have of it getting used.
+
+Now from the QA person's standpoint, we have actual acceptance criteria that let us know
+if a feature is complete or not. No more vague language that allows room for
+interpretation where I can inadvertently add more functionality to a feature because
+it is what I think the user might want someday. Maybe.
+
+Finally from the developer's standpoint we have features with an end point and a better
+description than, "Customer checkout feature." And not only do we have more clear,
+concise feature descriptions, when we are done writing code for the features we have a set of
+tests that will execute against the plain text features.
+
+###Build What We Want
+
+Cucumber benefits all aspects of the business, but possibly its greatest benefit is that
+it allows us to easily agree to what "done" means for any given feature. The definition
+of done for a feature won't change over the life of the project, or if it does change we
+will have a broken Cucumber spec to alert us that we have changed our mind somewhere.
+But by having that agreement of "done" in place up front it frees up the developers and
+testers to focus on specifics of implementation and verification of the feature without
+ambiguity.
+
+Developers of many languages keep a set of unit tests handy that will break if they
+make an unexpected change to some existing code. It may or may not be an intentional break, but the point is they have a safety net to catch a logic change. A suite of Cucumber tests has that same watchful eye over your application as a whole, rather than just at the class or method level. If the business changes how a feature operates and a cucumber test goes red, then the collaboration can kick back in across the whole team and the team can decide how to handle the original intent of the feature with this new feature request.
+
+In short, we have a living record of what "done" has meant to every feature we have
+developed over the life of the project. By executing tests against those acceptance
+criteria, we also have a constant check that "done" for existing features remains done.
+
+###Cucumber Helps With Quality
+
+So while I don't think Cucumber is a QA specific tool, it helps with overall product
+quality. By providing a good place for collaboration and by helping the team define
+"done" early in the feature life cycle, then quality has become a first class citizen to
+your team. Quality is a whole team goal, not just members of the QA team. (By
+definition, people on the QA team *assure* quality, they don't build it.) 
+
+If you are not using Cucumber or another BDD/ATDD framework, I would highly recommend
+looking into using one. However, look into those tools for the benefits they can bring
+your whole team not simply as a QA tool. And while they will help alleviate some manual
+work for the QA folks on your team, Cucumber is no replacement for a human being who can
+dive into the application in ways you never thought of when laying out the acceptance
+criteria.
+
+After all who would you rather have poking around your app looking for things to go
+wrong?
+
+Your QA people?
+
+Or your users?
