@@ -73,7 +73,10 @@ testers to focus on specifics of implementation and verification of the feature 
 ambiguity.
 
 Developers of many languages keep a set of unit tests handy that will break if they
-make an unexpected change to some existing code. It may or may not be an intentional break, but the point is they have a safety net to catch a logic change. A suite of Cucumber tests has that same watchful eye over your application as a whole, rather than just at the class or method level. If the business changes how a feature operates and a cucumber test goes red, then the collaboration can kick back in across the whole team and the team can decide how to handle the original intent of the feature with this new feature request.
+make a change to existing code. It may or may not be an intentional break, but the point
+is they have a safety net to catch a logic change. A suite of Cucumber tests has that
+same watchful eye over your application as a whole, rather than just at the class or
+method level. If the business changes how a feature behaves and a cucumber test goes red, then the collaboration can kick back in across the whole team and the team can decide how to handle the original intent of the feature with this new feature request.
 
 In short, we have a living record of what "done" has meant to every feature we have
 developed over the life of the project. By executing tests against those acceptance
@@ -83,7 +86,7 @@ criteria, we also have a constant check that "done" for existing features remain
 
 So while I don't think Cucumber is a QA specific tool, it helps with overall product
 quality. By providing a good place for collaboration and by helping the team define
-"done" early in the feature life cycle, then quality has become a first class citizen to
+"done" early in the feature life cycle, quality has become a first class citizen to
 your team. Quality is a whole team goal, not just members of the QA team. (By
 definition, people on the QA team *assure* quality, they don't build it.) 
 
@@ -94,9 +97,8 @@ work for the QA folks on your team, Cucumber is no replacement for a human being
 dive into the application in ways you never thought of when laying out the acceptance
 criteria.
 
-After all who would you rather have poking around your app looking for things to go
-wrong?
+After all who would you rather have exploring your app and poking around looking for things to go wrong?
 
-Your QA people?
+Your QA team?
 
 Or your users?
