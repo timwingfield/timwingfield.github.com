@@ -2,7 +2,7 @@
 Title: Kanban on the Factory Floor
 Author: Tim Wingfield
 layout: post
-categories: kanban, agile, lean
+categories: kanban agile lean
 ---
 ##Kanban on the Factory Floor
 
