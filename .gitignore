@@ -2,3 +2,4 @@
 /_published
 .DS_Store
 bin/social_config.yml
+.jekyll-cache/
